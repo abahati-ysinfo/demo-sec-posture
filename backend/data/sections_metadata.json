@@ -1,0 +1,116 @@
+[
+  {
+    "id": "section_1",
+    "name": "Governance & Strategy",
+    "description": "How security aligns with business objectives, leadership accountability, policies, budgets and metrics. Covers strategic planning, executive oversight, and organizational structure.",
+    "tags": ["governance", "strategy", "management", "executive", "leadership", "policy"]
+  },
+  {
+    "id": "section_2",
+    "name": "Risk Management",
+    "description": "How cybersecurity risks are identified, assessed, tracked, and integrated into enterprise risk management. Includes risk assessment methodologies and risk treatment strategies.",
+    "tags": ["risk", "governance", "assessment", "compliance", "risk_management"]
+  },
+  {
+    "id": "section_3",
+    "name": "Asset Management",
+    "description": "How hardware, software, and data assets are inventoried, classified, and managed throughout their lifecycle. Covers asset discovery, tracking, and disposal.",
+    "tags": ["assets", "inventory", "hardware", "software", "lifecycle", "cmdb"]
+  },
+  {
+    "id": "section_4",
+    "name": "Identity & Access Management (IAM)",
+    "description": "How identities, MFA, privileged accounts and access controls are managed across systems and cloud platforms. Includes authentication, authorization, and identity governance.",
+    "tags": ["iam", "identity", "authentication", "authorization", "mfa", "access_control", "privileged_access"]
+  },
+  {
+    "id": "section_5",
+    "name": "Network Security",
+    "description": "How networks are segmented, monitored, and protected from unauthorized access. Covers firewalls, network segmentation, VPNs, and network monitoring.",
+    "tags": ["network", "firewall", "segmentation", "vpn", "perimeter", "network_security"]
+  },
+  {
+    "id": "section_6",
+    "name": "Endpoint Security",
+    "description": "How workstations, laptops, mobile devices, and servers are protected from malware and threats. Includes antivirus, EDR, patch management, and device hardening.",
+    "tags": ["endpoint", "antivirus", "edr", "patching", "devices", "workstations", "mobile"]
+  },
+  {
+    "id": "section_7",
+    "name": "Data Protection & Privacy",
+    "description": "How sensitive data is classified, encrypted, and protected throughout its lifecycle. Covers data loss prevention, encryption, backup, and privacy compliance.",
+    "tags": ["data", "privacy", "encryption", "dlp", "backup", "gdpr", "data_protection"]
+  },
+  {
+    "id": "section_8",
+    "name": "Application Security",
+    "description": "How applications are developed, tested, and secured throughout the SDLC. Includes secure coding, vulnerability testing, and DevSecOps practices.",
+    "tags": ["application", "appsec", "sdlc", "devsecops", "secure_coding", "web_security"]
+  },
+  {
+    "id": "section_9",
+    "name": "Cloud & Container Security",
+    "description": "How cloud environments and containerized workloads are configured, monitored and protected. Covers AWS, Azure, GCP, Kubernetes, and cloud-native security.",
+    "tags": ["cloud", "aws", "azure", "gcp", "containers", "kubernetes", "cloud_security"]
+  },
+  {
+    "id": "section_10",
+    "name": "Incident Response & Resilience",
+    "description": "How security incidents are detected, responded to, and recovered from. Includes incident response plans, playbooks, and post-incident analysis.",
+    "tags": ["incident_response", "ir", "resilience", "recovery", "playbooks", "forensics"]
+  },
+  {
+    "id": "section_11",
+    "name": "Business Continuity",
+    "description": "How critical business functions are maintained during disruptions. Covers business continuity planning, disaster recovery, and resilience testing.",
+    "tags": ["business_continuity", "disaster_recovery", "bcdr", "resilience", "continuity"]
+  },
+  {
+    "id": "section_12",
+    "name": "Vendor Management",
+    "description": "How third-party vendors and suppliers are assessed, monitored, and managed for security risks. Includes vendor risk assessments and contract security requirements.",
+    "tags": ["vendor", "third_party", "supply_chain", "vendor_risk", "procurement"]
+  },
+  {
+    "id": "section_13",
+    "name": "Security Awareness & Training",
+    "description": "How employees are educated about security threats and best practices. Covers security training programs, phishing simulations, and awareness campaigns.",
+    "tags": ["training", "awareness", "education", "phishing", "human_factor", "culture"]
+  },
+  {
+    "id": "section_14",
+    "name": "Physical Security",
+    "description": "How physical facilities, data centers, and equipment are protected from unauthorized access. Covers access controls, surveillance, and environmental controls.",
+    "tags": ["physical", "facilities", "datacenter", "access_control", "surveillance"]
+  },
+  {
+    "id": "section_15",
+    "name": "Monitoring & Detection",
+    "description": "How security events are monitored, logged, and analyzed for threats. Covers SIEM, log management, threat detection, and security operations.",
+    "tags": ["monitoring", "siem", "logging", "detection", "soc", "threat_detection"]
+  },
+  {
+    "id": "section_16",
+    "name": "Vulnerability Management",
+    "description": "How vulnerabilities are identified, prioritized, and remediated across the environment. Includes vulnerability scanning, patch management, and remediation tracking.",
+    "tags": ["vulnerability", "patching", "scanning", "remediation", "vuln_management"]
+  },
+  {
+    "id": "section_17",
+    "name": "Compliance & Audit",
+    "description": "How the organization meets regulatory requirements and industry standards. Covers compliance frameworks, audit readiness, and regulatory reporting.",
+    "tags": ["compliance", "audit", "regulatory", "iso27001", "soc2", "frameworks"]
+  },
+  {
+    "id": "section_18",
+    "name": "OT/ICS & IoT Security",
+    "description": "How industrial control systems, SCADA and OT environments are segmented, monitored and secured. Covers operational technology and IoT device security.",
+    "tags": ["ot", "ics", "industrial", "scada", "iot", "operational_technology"]
+  },
+  {
+    "id": "section_19",
+    "name": "AI/ML & Machine Learning Security",
+    "description": "How AI and machine learning systems are secured and how AI is used for security purposes. Covers model security, data privacy, and AI-powered security tools.",
+    "tags": ["ai", "ml", "machine_learning", "artificial_intelligence", "ai_security"]
+  }
+]

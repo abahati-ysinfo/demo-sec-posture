@@ -1,0 +1,98 @@
+nist_csf:
+  identity:
+    - id: "PR.AC-1"
+      control: "Identities and credentials are issued, managed, verified, revoked, and audited"
+      description: "Organizations manage identities for devices, users, and processes throughout their lifecycle"
+      keywords: ["identity", "credential", "authentication", "user management"]
+    
+    - id: "PR.AC-7"
+      control: "Users, devices, and other assets are authenticated"
+      description: "Multi-factor authentication and strong authentication mechanisms"
+      keywords: ["mfa", "2fa", "authentication", "password"]
+  
+  access_control:
+    - id: "PR.AC-4"
+      control: "Access permissions and authorizations are managed"
+      description: "Principle of least privilege, role-based access control"
+      keywords: ["rbac", "permissions", "authorization", "least privilege"]
+    
+    - id: "PR.AC-3"
+      control: "Remote access is managed"
+      description: "Secure remote access with encryption and authentication"
+      keywords: ["remote", "vpn", "access", "encryption"]
+  
+  data_security:
+    - id: "PR.DS-1"
+      control: "Data-at-rest is protected"
+      description: "Encryption and access controls for stored data"
+      keywords: ["encryption", "data", "storage", "protection"]
+    
+    - id: "PR.DS-2"
+      control: "Data-in-transit is protected"
+      description: "Encryption for data moving across networks"
+      keywords: ["encryption", "transit", "tls", "ssl"]
+
+iso_27001:
+  access_control:
+    - id: "A.9.2.1"
+      control: "User registration and de-registration"
+      description: "Formal user registration process for granting access"
+      keywords: ["user", "registration", "provisioning"]
+    
+    - id: "A.9.4.2"
+      control: "Secure log-on procedures"
+      description: "Access to systems controlled by secure log-on procedure"
+      keywords: ["login", "authentication", "password"]
+    
+    - id: "A.9.4.3"
+      control: "Password management system"
+      description: "Interactive password management system ensuring quality passwords"
+      keywords: ["password", "management", "policy"]
+  
+  cryptography:
+    - id: "A.10.1.1"
+      control: "Policy on the use of cryptographic controls"
+      description: "Policy for protection of information using cryptography"
+      keywords: ["encryption", "cryptography", "policy"]
+
+owasp_top_10:
+  - id: "A01:2021"
+    control: "Broken Access Control"
+    description: "Enforce access control checks and principle of least privilege"
+    keywords: ["access control", "authorization", "privilege"]
+  
+  - id: "A02:2021"
+    control: "Cryptographic Failures"
+    description: "Protect sensitive data with strong encryption"
+    keywords: ["encryption", "cryptography", "data protection"]
+  
+  - id: "A07:2021"
+    control: "Identification and Authentication Failures"
+    description: "Implement MFA, secure session management, credential stuffing protection"
+    keywords: ["authentication", "mfa", "session", "credential"]
+  
+  - id: "A05:2021"
+    control: "Security Misconfiguration"
+    description: "Secure configuration management and hardening"
+    keywords: ["configuration", "hardening", "security"]
+
+cis_controls:
+  - id: "CIS Control 6"
+    control: "Access Control Management"
+    description: "Use centralized account management, MFA, and least privilege"
+    keywords: ["access", "account", "mfa", "privilege"]
+  
+  - id: "CIS Control 3"
+    control: "Data Protection"
+    description: "Develop processes to identify, classify, and protect data"
+    keywords: ["data", "protection", "classification"]
+  
+  - id: "CIS Control 14"
+    control: "Security Awareness and Skills Training"
+    description: "Establish security awareness training program"
+    keywords: ["training", "awareness", "education"]
+  
+  - id: "CIS Control 16"
+    control: "Application Software Security"
+    description: "Manage security of in-house and acquired software"
+    keywords: ["application", "software", "security", "development"]

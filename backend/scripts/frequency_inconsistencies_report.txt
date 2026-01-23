@@ -1,0 +1,68 @@
+PHASE 4: SYSTEMATIC IMPROVEMENTS - FREQUENCY SCALE ANALYSIS
+================================================================================
+
+Total frequency questions: 20
+Questions needing normalization: 15
+
+QUESTIONS NEEDING NORMALIZATION:
+--------------------------------------------------------------------------------
+Question 1_1_2: How often is your cybersecurity strategy reviewed and updated?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Quarterly, Annually, Only after major changes/incidents, No formal review schedule
+
+Question 1_2_2: How frequently are security policies reviewed?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Quarterly, Annually, Only after major changes/incidents, No formal review schedule
+
+Question 2_1_1: How frequently does your organization conduct cybersecurity risk assessments?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Monthly, Quarterly, Annually, Bi-annually, As needed, Never
+
+Question 2_1_7: How often do you update your risk assessments?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Continuously, Quarterly, Annually, When incidents occur, Never
+
+Question 2_3_5: How often do you update your business impact analysis?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Annually, Bi-annually, When business changes, Never updated
+
+Question 3_1_6: How often do you update your asset inventory?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Real-time, Daily, Weekly, Monthly, Quarterly, Annually
+
+Question 5_2_2: How often do you review firewall rules?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Weekly, Monthly, Quarterly, Annually, As needed, Never
+
+Question 6_1_5: How often do you update endpoint protection signatures?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Real-time, Hourly, Daily, Weekly, Manual updates
+
+Question 6_3_4: How often do you review endpoint security configurations?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Weekly, Monthly, Quarterly, Annually, As needed, Never
+
+Question 10_1_2: How often do you update your incident response plan?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Quarterly, Annually, After incidents, As needed, Never updated
+
+Question 11_1_2: How often do you update your business continuity plan?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Quarterly, Annually, After incidents, As needed, Never updated
+
+Question 12_1_5: How often do you reassess vendor security?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Annually, Bi-annually, Contract renewal, As needed, Never
+
+Question 14_1_6: How often do you review physical access logs?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Daily, Weekly, Monthly, As needed, Never
+
+Question 16_1_2: How often do you perform vulnerability scans?
+  Reason: Missing frequency_monitoring scale (current: None)
+  Current options: Daily, Weekly, Monthly, Quarterly, Annually, Never
+
+Question 17_2_2: How often do you perform internal security audits?
+  Reason: Missing frequency_review scale (current: None)
+  Current options: Quarterly, Annually, Bi-annually, As needed, Never
+

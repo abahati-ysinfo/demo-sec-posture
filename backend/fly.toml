@@ -1,0 +1,63 @@
+app = "security-posture-demo"
+primary_region = "iad"
+
+# Multi-region deployment configuration
+# US East Coast (primary), US West Coast, and Australia (Sydney)
+[deploy]
+  strategy = "rolling"
+  release_command = "poetry run alembic upgrade head"
+
+[[regions]]
+  name = "iad"  # US East Coast (primary)
+  
+[[regions]]
+  name = "lax"  # US West Coast
+  
+[[regions]]
+  name = "syd"  # Australia (Sydney)
+
+[build]
+  dockerfile = "Dockerfile"
+
+[[services]]
+  http_checks = []
+  internal_port = 8000
+  processes = ["app"]
+  protocol = "tcp"
+  script_checks = []
+
+  [services.concurrency]
+    hard_limit = 25
+    soft_limit = 20
+    type = "connections"
+
+  [[services.ports]]
+    force_https = true
+    handlers = ["http"]
+    port = 80
+
+  [[services.ports]]
+    handlers = ["tls", "http"]
+    port = 443
+
+[env]
+  PORT = "8000"
+  RESTART_TIMESTAMP = "1726477055"
+  REPORTS_DIR = "/data/reports"
+  FLY_PRIMARY_REGION = "iad"
+
+[[mounts]]
+  source = "reports_data"
+  destination = "/data"
+
+# Machine configuration for multi-region deployment
+# Total of 4 machines distributed across 3 regions
+[[vm]]
+  memory = "2gb"
+  cpu_kind = "shared"
+  cpus = 1
+  
+# Scale configuration for multi-region deployment
+[scaling]
+  min_machines_running = 1
+  max_machines_running = 4

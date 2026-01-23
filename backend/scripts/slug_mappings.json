@@ -1,0 +1,2512 @@
+{
+  "10_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_1_2": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed",
+    "6": "no_formal_review"
+  },
+  "10_1_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_1_4": {
+    "1": "incident_commander_lead",
+    "10": "business_unit_representatives",
+    "11": "not_applicable",
+    "12": "not_sure",
+    "2": "communications_lead",
+    "3": "forensics_investigation_lead",
+    "4": "it_operations",
+    "5": "security_engineering",
+    "6": "legal_privacy_officer",
+    "7": "human_resources",
+    "8": "public_relations_communications",
+    "9": "external_ir_provider_consultant"
+  },
+  "10_1_5": {
+    "1": "regularly",
+    "2": "annually",
+    "3": "occasionally",
+    "4": "never",
+    "5": "not_sure"
+  },
+  "10_1_6": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "occasionally",
+    "4": "never"
+  },
+  "10_1_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_2_1": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "10_2_2": {
+    "1": "1_hour",
+    "2": "1_4_hours",
+    "3": "4_24_hours",
+    "4": "24_hours",
+    "5": "no",
+    "6": "not_sure"
+  },
+  "10_2_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_2_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "10_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_2_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "10_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_3_2": {
+    "1": "automated_scanning",
+    "2": "manual_verification",
+    "3": "third_party_assessment",
+    "4": "no",
+    "5": "not_sure"
+  },
+  "10_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_3_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "10_3_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "10_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_1_2": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed"
+  },
+  "11_1_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_1_4": {
+    "1": "1_hour",
+    "2": "1_4_hours",
+    "3": "4_24_hours",
+    "4": "24_hours",
+    "5": "not_defined"
+  },
+  "11_1_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_1_6": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "occasionally",
+    "4": "never"
+  },
+  "11_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_2_2": {
+    "1": "on_premises_data_center",
+    "2": "co_location_facility",
+    "3": "cloud_provider_iaas",
+    "4": "managed_dr_service",
+    "5": "hot_site",
+    "6": "warm_site",
+    "7": "cold_site",
+    "8": "none_not_applicable"
+  },
+  "11_2_3": {
+    "1": "real_time_replication",
+    "2": "near_real_time",
+    "3": "scheduled_backups",
+    "4": "manual_copying",
+    "5": "no"
+  },
+  "11_2_4": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "occasionally",
+    "4": "never"
+  },
+  "11_2_5": {
+    "1": "out_of_band_messaging",
+    "2": "emergency_notification_system",
+    "3": "dedicated_dr_communication_platform",
+    "4": "satellite_backup_phone_system",
+    "5": "alternate_email_system",
+    "6": "predefined_conference_bridges",
+    "7": "physical_rally_points",
+    "8": "not_implemented"
+  },
+  "11_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_3_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_3_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "11_3_4": {
+    "1": "regularly",
+    "2": "annually",
+    "3": "occasionally",
+    "4": "never"
+  },
+  "11_3_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "11_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_4_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_4_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "11_4_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_4_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "11_4_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "11_4_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "12_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "12_1_2": {
+    "1": "security_questionnaire_assessment",
+    "2": "soc_2_type_ii_or_iso_27001_certification",
+    "3": "penetration_test_reports",
+    "4": "data_processing_agreement_dpa",
+    "5": "breach_notification_history",
+    "6": "subprocessor_management",
+    "7": "regulatory_compliance_attestations",
+    "8": "contractual_slas_and_guarantees",
+    "9": "not_applicable"
+  },
+  "12_1_3": {
+    "1": "high_medium_low",
+    "2": "critical_important_standard",
+    "3": "tiered_approach",
+    "4": "no"
+  },
+  "12_1_4": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "12_1_5": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed"
+  },
+  "12_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "12_1_7": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "12_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "12_2_2": {
+    "1": "option_1",
+    "2": "option_2",
+    "3": "option_3",
+    "4": "option_4",
+    "5": "not_applicable"
+  },
+  "12_2_3": {
+    "1": "cyber_liability",
+    "2": "professional_liability",
+    "3": "general_liability",
+    "4": "all_of_the_above",
+    "5": "none_required"
+  },
+  "12_2_4": {
+    "1": "standard_dpa",
+    "2": "custom_agreements",
+    "3": "vendor_templates",
+    "4": "no"
+  },
+  "12_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "12_2_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "12_3_1": {
+    "1": "automated_monitoring_tools",
+    "2": "manual_reviews",
+    "3": "combination_approach",
+    "4": "third_party_service",
+    "5": "not_monitored"
+  },
+  "12_3_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "12_3_3": {
+    "1": "immediately",
+    "2": "24_hours",
+    "3": "72_hours",
+    "4": "1_week",
+    "5": "no"
+  },
+  "12_3_4": {
+    "1": "regularly",
+    "2": "risk_based",
+    "3": "contract_driven",
+    "4": "never"
+  },
+  "12_3_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "12_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "12_4_1": {
+    "1": "comprehensive_sbom",
+    "2": "partial_sbom",
+    "3": "planning_to_implement",
+    "4": "no"
+  },
+  "12_4_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "12_4_3": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "12_4_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "12_4_5": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "13_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_1_10": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "13_1_2": {
+    "1": "monthly",
+    "2": "quarterly",
+    "3": "annually",
+    "4": "as_needed",
+    "5": "never"
+  },
+  "13_1_3": {
+    "1": "phishing_and_social_engineering",
+    "10": "not_applicable",
+    "2": "password_security_and_mfa",
+    "3": "data_handling_and_classification",
+    "4": "device_and_endpoint_security",
+    "5": "incident_reporting_procedures",
+    "6": "acceptable_use_policies",
+    "7": "remote_work_security",
+    "8": "third_party_and_supply_chain_risk",
+    "9": "secure_coding_practices"
+  },
+  "13_1_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "13_1_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_1_6": {
+    "1": "100",
+    "2": "95_99",
+    "3": "90_94",
+    "4": "80_89",
+    "5": "no"
+  },
+  "13_1_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_1_8": {
+    "1": "monthly",
+    "2": "quarterly",
+    "3": "bi_annually",
+    "4": "annually",
+    "5": "never"
+  },
+  "13_1_9": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "bi_annually",
+    "4": "as_needed",
+    "5": "never"
+  },
+  "13_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_2_2": {
+    "1": "monthly",
+    "2": "quarterly",
+    "3": "bi_annually",
+    "4": "annually",
+    "5": "never"
+  },
+  "13_2_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "13_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_2_5": {
+    "1": "0_4_9",
+    "2": "5_0_9_9",
+    "3": "10_20",
+    "4": "20",
+    "5": "not_measured"
+  },
+  "13_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_3_2": {
+    "1": "all_employees",
+    "2": "privileged_it_administrators",
+    "3": "developers_and_engineers",
+    "4": "executive_leadership",
+    "5": "contractors_and_temporary_staff",
+    "6": "third_party_vendors",
+    "7": "not_applicable"
+  },
+  "13_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_3_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "13_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_3_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "13_4_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_4_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "13_4_3": {
+    "1": "annual",
+    "2": "bi_annual",
+    "3": "based_on_role_changes",
+    "4": "as_needed",
+    "5": "no"
+  },
+  "13_4_4": {
+    "1": "dedicated_budget",
+    "2": "part_of_it_budget",
+    "3": "hr_budget",
+    "4": "ad_hoc_funding",
+    "5": "no"
+  },
+  "13_4_5": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "13_4_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "13_4_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "13_4_8": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "14_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_1_2": {
+    "1": "biometric",
+    "2": "card_badge_access",
+    "3": "pin_password",
+    "4": "multi_factor",
+    "5": "security_personnel",
+    "6": "no"
+  },
+  "14_1_3": {
+    "1": "24_7_monitoring",
+    "2": "recording_only",
+    "3": "motion_activated",
+    "4": "limited_coverage",
+    "5": "no"
+  },
+  "14_1_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "14_1_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_1_6": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed"
+  },
+  "14_2_1": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "14_2_2": {
+    "1": "ups_systems",
+    "2": "generators",
+    "3": "battery_backup",
+    "4": "multiple_power_sources",
+    "5": "none"
+  },
+  "14_2_3": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured"
+  },
+  "14_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_3_1": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured"
+  },
+  "14_3_10": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_3_11": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured"
+  },
+  "14_3_12": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_3_13": {
+    "1": "daily",
+    "2": "weekly",
+    "3": "monthly",
+    "4": "real_time_continuous",
+    "5": "no"
+  },
+  "14_3_14": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_3_15": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "14_3_16": {
+    "1": "annually",
+    "2": "bi_annually",
+    "3": "as_needed",
+    "4": "never",
+    "5": "not_sure"
+  },
+  "14_3_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_3_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "14_3_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_3_5": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured"
+  },
+  "14_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "14_3_7": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "14_3_8": {
+    "1": "annually",
+    "2": "bi_annually",
+    "3": "as_needed",
+    "4": "never"
+  },
+  "14_3_9": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured"
+  },
+  "15_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "15_1_2": {
+    "1": "commercial_solution",
+    "2": "open_source_solution",
+    "3": "custom_built_solution",
+    "4": "managed_service",
+    "5": "not_deployed",
+    "6": "not_sure"
+  },
+  "15_1_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "15_1_4": {
+    "1": "automated_correlation",
+    "2": "manual_analysis",
+    "3": "hybrid_approach",
+    "4": "no",
+    "5": "not_sure"
+  },
+  "15_1_5": {
+    "1": "1_hour",
+    "2": "1_4_hours",
+    "3": "4_24_hours",
+    "4": "24_hours",
+    "5": "not_measured",
+    "6": "not_sure"
+  },
+  "15_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "15_1_7": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "15_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "15_2_2": {
+    "1": "type_a",
+    "2": "type_b",
+    "3": "type_c",
+    "4": "hybrid",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "15_2_3": {
+    "1": "regularly",
+    "2": "occasionally",
+    "3": "after_incidents",
+    "4": "never",
+    "5": "not_sure"
+  },
+  "15_2_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "15_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "15_2_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "15_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "15_3_2": {
+    "1": "type_a",
+    "2": "type_b",
+    "3": "type_c",
+    "4": "hybrid",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "15_3_3": {
+    "1": "30_days",
+    "2": "90_days",
+    "3": "6_months",
+    "4": "1_year",
+    "5": "1_year_5",
+    "6": "varies_by_log_type",
+    "7": "not_sure"
+  },
+  "15_3_4": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "15_3_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "15_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_1_2": {
+    "1": "continuously",
+    "2": "daily",
+    "3": "weekly",
+    "4": "monthly",
+    "5": "quarterly",
+    "6": "only_when_issues",
+    "7": "not_monitored"
+  },
+  "16_1_3": {
+    "1": "type_a",
+    "2": "type_b",
+    "3": "type_c",
+    "4": "hybrid",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "16_1_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_1_5": {
+    "1": "regularly",
+    "2": "annually",
+    "3": "occasionally",
+    "4": "never",
+    "5": "not_sure"
+  },
+  "16_1_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "16_1_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_2_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "16_2_3": {
+    "1": "critical_24h_high_7d_medium_30d",
+    "2": "critical_72h_high_14d_medium_60d",
+    "3": "critical_7d_high_30d_medium_90d",
+    "4": "no",
+    "5": "not_sure"
+  },
+  "16_2_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "16_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_2_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "16_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_3_10": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "16_3_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "16_3_3": {
+    "1": "within_24_hours",
+    "2": "within_72_hours",
+    "3": "within_1_week",
+    "4": "within_1_month",
+    "5": "no",
+    "6": "not_sure"
+  },
+  "16_3_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "16_3_5": {
+    "1": "fully_automated",
+    "2": "semi_automated",
+    "3": "manual_only",
+    "4": "varies_by_system_type",
+    "5": "not_sure"
+  },
+  "16_3_6": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "16_3_7": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "16_3_8": {
+    "1": "yes",
+    "2": "no"
+  },
+  "16_3_9": {
+    "1": "yes",
+    "2": "no"
+  },
+  "17_1_1": {
+    "1": "gdpr",
+    "2": "hipaa",
+    "3": "pci_dss",
+    "4": "soc_2",
+    "5": "iso_27001",
+    "6": "nist_csf",
+    "7": "not_applicable"
+  },
+  "17_1_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "17_1_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "17_1_4": {
+    "1": "monthly",
+    "2": "quarterly",
+    "3": "annually",
+    "4": "bi_annually",
+    "5": "as_required",
+    "6": "never"
+  },
+  "17_1_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "17_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "17_1_7": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "17_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "17_2_2": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed"
+  },
+  "17_2_3": {
+    "1": "option_1",
+    "2": "option_2",
+    "3": "option_3",
+    "4": "option_4",
+    "5": "not_applicable"
+  },
+  "17_2_4": {
+    "1": "internal_audit_team",
+    "2": "it_security_team",
+    "3": "external_consultants",
+    "4": "mixed_approach",
+    "5": "no"
+  },
+  "17_2_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "17_2_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "17_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "17_3_2": {
+    "1": "type_a",
+    "2": "type_b",
+    "3": "type_c",
+    "4": "hybrid",
+    "5": "not_applicable"
+  },
+  "17_3_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented"
+  },
+  "17_3_4": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "17_3_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "17_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "17_3_7": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_applicable"
+  },
+  "18_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "18_1_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_applicable"
+  },
+  "18_1_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "18_1_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_applicable"
+  },
+  "18_1_5": {
+    "1": "continuous_monitoring",
+    "2": "periodic_monitoring",
+    "3": "passive_monitoring_only",
+    "4": "no",
+    "5": "not_applicable"
+  },
+  "18_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "18_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "18_2_2": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_applicable"
+  },
+  "18_2_3": {
+    "1": "comprehensive_inventory",
+    "2": "partial_inventory",
+    "3": "manual_tracking",
+    "4": "no",
+    "5": "not_applicable"
+  },
+  "18_2_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_applicable"
+  },
+  "18_2_5": {
+    "1": "continuous_monitoring",
+    "2": "periodic_monitoring",
+    "3": "anomaly_detection",
+    "4": "no",
+    "5": "not_applicable"
+  },
+  "19_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "19_1_2": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "19_1_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_applicable"
+  },
+  "19_1_4": {
+    "1": "regular_testing",
+    "2": "occasional_testing",
+    "3": "only_for_critical_models",
+    "4": "no",
+    "5": "not_applicable"
+  },
+  "19_1_5": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_applicable"
+  },
+  "19_1_6": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "19_2_1": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_applicable"
+  },
+  "19_2_2": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable"
+  },
+  "19_2_3": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_applicable"
+  },
+  "19_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_1_1": {
+    "1": "documented_approved_maintained",
+    "2": "documented_but_stale",
+    "3": "informal_understanding",
+    "4": "no_strategy",
+    "5": "not_sure"
+  },
+  "1_1_2": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes"
+  },
+  "1_1_3": {
+    "1": "fully_aligned",
+    "2": "partially_aligned",
+    "3": "not_aligned",
+    "4": "unknown"
+  },
+  "1_1_4": {
+    "1": "ciso",
+    "2": "cio",
+    "3": "ceo",
+    "4": "board",
+    "5": "shared_between_multiple_executives",
+    "6": "no",
+    "7": "other"
+  },
+  "1_1_5": {
+    "1": "very_low",
+    "2": "low",
+    "3": "medium",
+    "4": "high",
+    "5": "very_high"
+  },
+  "1_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_1_7": {
+    "1": "ad_hoc",
+    "2": "defined",
+    "3": "managed",
+    "4": "optimized"
+  },
+  "1_2_1": {
+    "1": "0_5",
+    "2": "6_15",
+    "3": "16_30",
+    "4": "30"
+  },
+  "1_2_2": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes"
+  },
+  "1_2_3": {
+    "1": "1_year",
+    "2": "1_2_years",
+    "3": "2_3_years",
+    "4": "3_years",
+    "5": "unknown"
+  },
+  "1_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_2_6": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_sure"
+  },
+  "1_2_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_3_1": {
+    "1": "76_100",
+    "2": "51_75",
+    "3": "26_50",
+    "4": "0_25",
+    "5": "not_sure"
+  },
+  "1_3_2": {
+    "1": "increased_significantly",
+    "2": "increased_slightly",
+    "3": "remained_same",
+    "4": "decreased"
+  },
+  "1_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_3_4": {
+    "1": "0",
+    "2": "1_5",
+    "3": "6_15",
+    "4": "16_30",
+    "5": "30"
+  },
+  "1_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_3_6": {
+    "1": "risk_based",
+    "2": "compliance_driven",
+    "3": "industry_benchmarks",
+    "4": "ad_hoc"
+  },
+  "1_4_1": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned"
+  },
+  "1_4_2": {
+    "1": "monthly",
+    "2": "quarterly",
+    "3": "annually",
+    "4": "never"
+  },
+  "1_4_3": {
+    "1": "security_incidents_count",
+    "2": "mean_time_to_detect_mttd",
+    "3": "mean_time_to_respond_mttr",
+    "4": "vulnerability_remediation_time",
+    "5": "patch_compliance_rate",
+    "6": "user_awareness_training_completion",
+    "7": "security_audit_findings",
+    "8": "risk_assessment_scores"
+  },
+  "1_4_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_4_5": {
+    "1": "quantitative_metrics",
+    "2": "qualitative_assessments",
+    "3": "both",
+    "4": "not_measured"
+  },
+  "1_4_6": {
+    "1": "incident_response_time",
+    "2": "vulnerability_remediation_rate",
+    "3": "security_awareness_metrics",
+    "4": "compliance_status",
+    "5": "access_control_effectiveness",
+    "6": "security_tool_coverage",
+    "7": "no"
+  },
+  "1_4_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "1_4_8": {
+    "1": "maturity_model_framework",
+    "2": "capability_assessments",
+    "3": "benchmark_comparisons",
+    "4": "audit_results",
+    "5": "self_assessment",
+    "6": "not_measured"
+  },
+  "1_4_9": {
+    "1": "incident_statistics",
+    "2": "risk_posture",
+    "3": "compliance_status",
+    "4": "security_investments",
+    "5": "program_maturity",
+    "6": "vulnerability_metrics",
+    "7": "third_party_risk",
+    "8": "no",
+    "9": "not_sure"
+  },
+  "2_1_1": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed",
+    "6": "no_formal_review"
+  },
+  "2_1_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_1_3": {
+    "1": "nist",
+    "2": "iso_27001",
+    "3": "fair",
+    "4": "custom",
+    "5": "none"
+  },
+  "2_1_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_1_5": {
+    "1": "impact_x_likelihood",
+    "2": "business_criticality",
+    "3": "regulatory_requirements",
+    "4": "ad_hoc",
+    "5": "not_prioritized"
+  },
+  "2_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_1_7": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed"
+  },
+  "2_2_1": {
+    "1": "avoid",
+    "2": "mitigate",
+    "3": "transfer",
+    "4": "accept",
+    "5": "monitor",
+    "6": "not_applicable"
+  },
+  "2_2_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_2_3": {
+    "1": "automated_tools",
+    "2": "manual_tracking",
+    "3": "periodic_reviews",
+    "4": "not_tracked"
+  },
+  "2_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_2_5": {
+    "1": "formally_documented",
+    "2": "informally_understood",
+    "3": "under_development",
+    "4": "not_defined"
+  },
+  "2_2_6": {
+    "1": "regular_reports",
+    "2": "dashboard_metrics",
+    "3": "ad_hoc_briefings",
+    "4": "not_communicated"
+  },
+  "2_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_3_2": {
+    "1": "critical_high_medium_low",
+    "2": "tier_1_2_3",
+    "3": "custom_classification",
+    "4": "not_classified"
+  },
+  "2_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_3_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "2_3_5": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes"
+  },
+  "2_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_1_2": {
+    "1": "90_100",
+    "2": "75_89",
+    "3": "50_74",
+    "4": "25_49",
+    "5": "0_24"
+  },
+  "3_1_3": {
+    "1": "automated_discovery",
+    "2": "manual_registration",
+    "3": "network_scanning",
+    "4": "combination",
+    "5": "no"
+  },
+  "3_1_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_1_5": {
+    "1": "endpoints",
+    "10": "third_party_saas_applications",
+    "11": "not_applicable",
+    "2": "servers",
+    "3": "mobile_devices",
+    "4": "network_devices",
+    "5": "applications_and_services",
+    "6": "databases_and_storage",
+    "7": "cloud_resources",
+    "8": "ot_ics_iot_devices",
+    "9": "backup_media"
+  },
+  "3_1_6": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed",
+    "6": "no_formal_review"
+  },
+  "3_1_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_2_2": {
+    "1": "security_review_required",
+    "2": "standard_security_specs",
+    "3": "vendor_security_assessment",
+    "4": "no"
+  },
+  "3_2_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_2_4": {
+    "1": "data_wiping",
+    "2": "physical_destruction",
+    "3": "certified_disposal",
+    "4": "return_to_vendor",
+    "5": "no"
+  },
+  "3_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_2_6": {
+    "1": "change_management_process",
+    "2": "automated_configuration",
+    "3": "manual_tracking",
+    "4": "no"
+  },
+  "3_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_3_2": {
+    "1": "public_internal_confidential_restricted",
+    "2": "high_medium_low",
+    "3": "custom_scheme",
+    "4": "no"
+  },
+  "3_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_3_4": {
+    "1": "technical_controls",
+    "2": "policy_enforcement",
+    "3": "training",
+    "4": "combination",
+    "5": "not_enforced"
+  },
+  "3_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "3_3_6": {
+    "1": "automated_policies",
+    "2": "manual_processes",
+    "3": "legal_hold_procedures",
+    "4": "no"
+  },
+  "4_1_1": {
+    "1": "active_directory",
+    "2": "azure_ad",
+    "3": "okta",
+    "4": "auth0",
+    "5": "google_workspace",
+    "6": "other",
+    "7": "not_sure"
+  },
+  "4_1_2": {
+    "1": "1",
+    "2": "2_3",
+    "3": "4_5",
+    "4": "6",
+    "5": "not_sure"
+  },
+  "4_1_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_1_4": {
+    "1": "0_25",
+    "2": "26_50",
+    "3": "51_75",
+    "4": "76_100",
+    "5": "not_sure"
+  },
+  "4_1_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_1_6": {
+    "1": "automated",
+    "2": "manual",
+    "3": "not_synchronized",
+    "4": "not_sure"
+  },
+  "4_1_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_1_8": {
+    "1": "automated_monitoring_tools",
+    "2": "manual_reviews",
+    "3": "combination_approach",
+    "4": "third_party_service",
+    "5": "not_monitored",
+    "6": "not_sure"
+  },
+  "4_2_1": {
+    "1": "role_based_rbac",
+    "2": "attribute_based_abac",
+    "3": "discretionary_dac",
+    "4": "mandatory_mac",
+    "5": "mixed_approach",
+    "6": "not_sure"
+  },
+  "4_2_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_2_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "4_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_2_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "4_2_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_3_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "4_3_3": {
+    "1": "monthly",
+    "2": "quarterly",
+    "3": "annually",
+    "4": "as_needed",
+    "5": "never",
+    "6": "not_sure"
+  },
+  "4_3_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "4_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_3_6": {
+    "1": "immediately",
+    "2": "within_1_hour",
+    "3": "within_24_hours",
+    "4": "within_1_week",
+    "5": "no",
+    "6": "not_sure"
+  },
+  "4_3_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_4_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_4_2": {
+    "1": "sms_text_message",
+    "2": "authenticator_app",
+    "3": "hardware_token",
+    "4": "biometric",
+    "5": "push_notification",
+    "6": "not_implemented",
+    "7": "not_sure"
+  },
+  "4_4_3": {
+    "1": "0_25",
+    "2": "26_50",
+    "3": "51_75",
+    "4": "76_100",
+    "5": "not_sure"
+  },
+  "4_4_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "4_4_5": {
+    "1": "documented_approved_maintained",
+    "2": "documented_but_stale",
+    "3": "informal_understanding",
+    "4": "no_strategy",
+    "5": "not_currently_managed"
+  },
+  "5_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_1_2": {
+    "1": "physical_segmentation",
+    "2": "virtual_segmentation_vlans",
+    "3": "software_defined_networking_sdn",
+    "4": "micro_segmentation",
+    "5": "no"
+  },
+  "5_1_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_1_4": {
+    "1": "firewalls",
+    "2": "access_control_lists",
+    "3": "zero_trust_model",
+    "4": "no"
+  },
+  "5_1_5": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planning",
+    "4": "not_implemented"
+  },
+  "5_1_6": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "network_access_control_nac",
+    "6": "wireless_intrusion_detection_prevention",
+    "7": "no"
+  },
+  "5_1_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_2_1": {
+    "1": "next_generation_firewall_ngfw",
+    "2": "traditional_firewall",
+    "3": "web_application_firewall_waf",
+    "4": "cloud_firewall",
+    "5": "not_deployed"
+  },
+  "5_2_2": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed",
+    "6": "no_formal_review"
+  },
+  "5_2_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_2_4": {
+    "1": "both_ids_and_ips",
+    "2": "ids_only",
+    "3": "ips_only",
+    "4": "neither"
+  },
+  "5_2_5": {
+    "1": "formal_change_process",
+    "2": "automated_deployment",
+    "3": "manual_changes",
+    "4": "no"
+  },
+  "5_2_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_2_7": {
+    "1": "annually",
+    "2": "bi_annually",
+    "3": "after_major_changes",
+    "4": "never"
+  },
+  "5_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_3_2": {
+    "1": "commercial_solution",
+    "2": "open_source_solution",
+    "3": "custom_built_solution",
+    "4": "managed_service",
+    "5": "not_deployed"
+  },
+  "5_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_3_4": {
+    "1": "machine_learning",
+    "2": "signature_based",
+    "3": "behavioral_analysis",
+    "4": "manual_review",
+    "5": "no"
+  },
+  "5_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_3_6": {
+    "1": "30_days",
+    "2": "90_days",
+    "3": "6_months",
+    "4": "1_year",
+    "5": "1_year_5",
+    "6": "not_retained"
+  },
+  "5_4_1": {
+    "1": "commercial_solution",
+    "2": "open_source_solution",
+    "3": "custom_built_solution",
+    "4": "managed_service",
+    "5": "not_deployed"
+  },
+  "5_4_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "5_4_3": {
+    "1": "ipsec_ikev2",
+    "2": "ssl_tls_vpn_e_g_openvpn",
+    "3": "wireguard",
+    "4": "l2tp_ipsec",
+    "5": "sstp",
+    "6": "none_not_applicable"
+  },
+  "5_4_4": {
+    "1": "prohibited",
+    "2": "allowed_with_restrictions",
+    "3": "fully_allowed",
+    "4": "not_configured"
+  },
+  "5_4_5": {
+    "1": "real_time_monitoring",
+    "2": "log_analysis",
+    "3": "periodic_reviews",
+    "4": "not_monitored"
+  },
+  "5_4_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_1_1": {
+    "1": "commercial_solution",
+    "2": "open_source_solution",
+    "3": "custom_built_solution",
+    "4": "managed_service",
+    "5": "not_deployed"
+  },
+  "6_1_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_1_3": {
+    "1": "group_policy",
+    "2": "mdm_emm",
+    "3": "configuration_management_tools",
+    "4": "manual_configuration",
+    "5": "no"
+  },
+  "6_1_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_1_5": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed"
+  },
+  "6_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_1_7": {
+    "1": "90_100",
+    "2": "75_89",
+    "3": "50_74",
+    "4": "25_49",
+    "5": "0_24"
+  },
+  "6_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_2_2": {
+    "1": "screen_lock_passcode_enforcement",
+    "2": "full_device_encryption",
+    "3": "mdm_enrollment",
+    "4": "os_version_enforcement",
+    "5": "app_allow_deny_lists",
+    "6": "jailbreak_root_detection",
+    "7": "remote_wipe_capability",
+    "8": "conditional_access_policies",
+    "9": "not_applicable"
+  },
+  "6_2_3": {
+    "1": "full_mdm_enrollment",
+    "2": "app_wrapping_containerization",
+    "3": "vpn_only_access",
+    "4": "not_allowed",
+    "5": "no"
+  },
+  "6_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_2_5": {
+    "1": "app_store_restrictions",
+    "2": "corporate_app_catalog",
+    "3": "sideloading_blocked",
+    "4": "no"
+  },
+  "6_2_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_3_2": {
+    "1": "group_policy",
+    "2": "configuration_management_tools",
+    "3": "manual_checks",
+    "4": "no"
+  },
+  "6_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "6_3_4": {
+    "1": "quarterly",
+    "2": "annually",
+    "3": "only_after_changes",
+    "4": "only_after_major_changes",
+    "5": "as_needed",
+    "6": "no_formal_review"
+  },
+  "7_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_1_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_1_3": {
+    "1": "aes_256",
+    "2": "aes_128",
+    "3": "rsa",
+    "4": "other",
+    "5": "not_encrypted"
+  },
+  "7_1_4": {
+    "1": "hardware_security_module_hsm",
+    "2": "key_management_service_kms",
+    "3": "software_based",
+    "4": "manual_management",
+    "5": "no"
+  },
+  "7_1_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_1_6": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured"
+  },
+  "7_1_7": {
+    "1": "transparent_data_encryption_tde",
+    "2": "column_level_encryption",
+    "3": "application_level_encryption",
+    "4": "no"
+  },
+  "7_2_1": {
+    "1": "gdpr",
+    "2": "ccpa_cpra",
+    "3": "hipaa",
+    "4": "glba",
+    "5": "sox",
+    "6": "pci_dss",
+    "7": "pipeda",
+    "8": "lgpd",
+    "9": "none_not_applicable"
+  },
+  "7_2_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_2_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_2_4": {
+    "1": "automated_system",
+    "2": "manual_process",
+    "3": "third_party_service",
+    "4": "no"
+  },
+  "7_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_2_6": {
+    "1": "explicit_consent",
+    "2": "opt_in",
+    "3": "opt_out",
+    "4": "implied_consent",
+    "5": "no"
+  },
+  "7_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_3_2": {
+    "1": "real_time",
+    "2": "hourly",
+    "3": "daily",
+    "4": "weekly",
+    "5": "monthly"
+  },
+  "7_3_3": {
+    "1": "76_100",
+    "2": "51_75",
+    "3": "26_50",
+    "4": "0_25",
+    "5": "offline_off_site_media",
+    "6": "mix_of_the_above",
+    "7": "not_sure"
+  },
+  "7_3_4": {
+    "1": "monthly",
+    "2": "quarterly",
+    "3": "annually",
+    "4": "never"
+  },
+  "7_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "7_3_6": {
+    "1": "1_hour",
+    "2": "1_4_hours",
+    "3": "4_24_hours",
+    "4": "24_hours",
+    "5": "not_defined"
+  },
+  "7_4_1": {
+    "1": "automated_discovery",
+    "2": "manual_mapping",
+    "3": "partial_capabilities",
+    "4": "no"
+  },
+  "7_4_2": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "7_4_3": {
+    "1": "for_all_high_risk_processing",
+    "2": "for_new_systems_only",
+    "3": "occasionally",
+    "4": "never"
+  },
+  "7_4_4": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed"
+  },
+  "7_4_5": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "8_1_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_1_2": {
+    "1": "always",
+    "2": "for_critical_applications",
+    "3": "occasionally",
+    "4": "never",
+    "5": "not_sure"
+  },
+  "8_1_3": {
+    "1": "commercial_sast_tool",
+    "2": "open_source_sast_tool",
+    "3": "ide_integrated_analysis",
+    "4": "manual_code_review",
+    "5": "not_performed",
+    "6": "not_sure"
+  },
+  "8_1_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_1_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_1_6": {
+    "1": "automated_scanning",
+    "2": "manual_review",
+    "3": "dependency_management_tools",
+    "4": "no",
+    "5": "not_sure"
+  },
+  "8_1_7": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_2_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_2_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_2_3": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "mixed_approach_legacy_systems",
+    "6": "not_sure"
+  },
+  "8_2_4": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_2_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_2_6": {
+    "1": "csrf_tokens",
+    "2": "samesite_cookies",
+    "3": "referrer_validation",
+    "4": "no",
+    "5": "not_sure"
+  },
+  "8_3_1": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_sure"
+  },
+  "8_3_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_3_3": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_3_4": {
+    "1": "url_versioning",
+    "2": "header_versioning",
+    "3": "parameter_versioning",
+    "4": "no",
+    "5": "not_sure"
+  },
+  "8_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_3_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "8_4_1": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "8_4_2": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "8_4_3": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "not_currently_implemented",
+    "5": "not_sure"
+  },
+  "8_4_4": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "8_4_5": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "8_4_6": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "8_4_7": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "9_1_1": {
+    "1": "iaas",
+    "2": "paas",
+    "3": "saas",
+    "4": "faas_serverless",
+    "5": "private_cloud",
+    "6": "hybrid_multi_cloud",
+    "7": "not_applicable",
+    "8": "not_sure"
+  },
+  "9_1_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "9_1_3": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_sure"
+  },
+  "9_1_4": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "9_1_5": {
+    "1": "automated_monitoring_tools",
+    "2": "manual_reviews",
+    "3": "combination_approach",
+    "4": "third_party_service",
+    "5": "not_monitored",
+    "6": "not_sure"
+  },
+  "9_1_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "9_1_7": {
+    "1": "security_first_approach",
+    "2": "cost_optimized_with_security",
+    "3": "balanced_approach",
+    "4": "cost_first_approach",
+    "5": "not_sure"
+  },
+  "9_2_1": {
+    "1": "formal_documented_process",
+    "2": "automated_system",
+    "3": "manual_process",
+    "4": "third_party_managed",
+    "5": "informal_process",
+    "6": "not_currently_managed",
+    "7": "not_sure"
+  },
+  "9_2_2": {
+    "1": "yes",
+    "2": "no"
+  },
+  "9_2_3": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_sure"
+  },
+  "9_2_4": {
+    "1": "automatically",
+    "2": "regularly",
+    "3": "occasionally",
+    "4": "never",
+    "5": "not_sure"
+  },
+  "9_2_5": {
+    "1": "pam_solution",
+    "2": "break_glass_procedures",
+    "3": "shared_accounts",
+    "4": "no"
+  },
+  "9_2_6": {
+    "1": "yes",
+    "2": "no"
+  },
+  "9_3_1": {
+    "1": "yes",
+    "2": "no"
+  },
+  "9_3_2": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_sure"
+  },
+  "9_3_3": {
+    "1": "fully_implemented",
+    "2": "partially_implemented",
+    "3": "planned",
+    "4": "not_implemented",
+    "5": "not_applicable",
+    "6": "not_sure"
+  },
+  "9_3_4": {
+    "1": "encryption",
+    "2": "access_controls",
+    "3": "network_segmentation",
+    "4": "monitoring_and_logging",
+    "5": "security_policies",
+    "6": "not_currently_secured",
+    "7": "not_sure"
+  },
+  "9_3_5": {
+    "1": "yes",
+    "2": "no"
+  },
+  "9_3_6": {
+    "1": "cloud_secret_managers",
+    "2": "environment_variables",
+    "3": "configuration_files",
+    "4": "hardcoded",
+    "5": "external_vault",
+    "6": "not_sure"
+  }
+}

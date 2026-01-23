@@ -1,0 +1,105 @@
+PHASE 4: SYSTEMATIC IMPROVEMENTS - MISSING OPTIONS ANALYSIS
+================================================================================
+
+Questions needing 'Not sure': 79
+Questions needing 'Not applicable': 14
+
+QUESTIONS NEEDING 'NOT SURE' OPTION:
+--------------------------------------------------------------------------------
+Question 1_4_9: Which security metrics are reported to the board?
+Question 4_1_1: What is your primary identity provider?
+Question 4_1_2: How many separate identity stores do you maintain?
+Question 4_1_4: What percentage of applications use centralized authentication?
+Question 4_1_6: How do you synchronize identities across systems?
+Question 4_1_8: How do you monitor directory service health?
+Question 4_2_1: What access control model do you use?
+Question 4_2_3: How do you manage privileged accounts?
+Question 4_2_5: How do you handle emergency access?
+Question 4_3_2: How do you handle user onboarding?
+Question 4_3_3: Do you conduct regular access reviews?
+Question 4_3_4: How do you handle user role changes?
+Question 4_3_6: How quickly do you disable accounts for terminated users?
+Question 4_4_2: What MFA methods do you support?
+Question 4_4_3: What percentage of users have MFA enabled?
+Question 7_4_5: Do you maintain consent management capabilities?
+Question 8_1_2: Do you conduct security code reviews?
+Question 8_1_3: What static application security testing (SAST) tools do you use?
+Question 8_1_6: How do you manage third-party libraries and dependencies?
+Question 8_2_6: How do you protect against cross-site request forgery (CSRF)?
+Question 8_3_1: How do you secure your APIs?
+Question 8_3_4: How do you handle API versioning?
+Question 8_4_1: Do you integrate security testing in your CI/CD pipeline?
+Question 8_4_2: Do you implement merge gate policies for security?
+Question 8_4_3: How do you scan for secrets in code repositories?
+Question 8_4_4: Do you perform Infrastructure as Code (IaC) security scanning?
+Question 8_4_5: How do you handle security findings in CI/CD?
+Question 8_4_6: Do you enforce SBOM generation and attestation in your release pipeline?
+Question 8_4_7: Do you implement mandatory Infrastructure as Code (IaC) policy enforcement?
+Question 9_1_1: Which cloud service models do you use?
+Question 9_1_3: How do you secure cloud configurations?
+Question 9_1_4: Do you implement network security in the cloud?
+Question 9_1_5: How do you monitor cloud security?
+Question 9_1_7: How do you manage cloud costs and security trade-offs?
+Question 9_2_1: How do you manage cloud identities?
+Question 9_2_3: How do you secure cloud API access?
+Question 9_2_4: Do you rotate cloud access credentials?
+Question 9_2_5: How do you manage privileged access to cloud resources?
+Question 9_3_2: How do you secure container images?
+Question 9_3_3: Do you implement container runtime security?
+Question 9_3_4: How do you secure serverless functions?
+Question 9_3_6: How do you manage secrets in cloud environments?
+Question 10_1_2: How often do you update your incident response plan?
+Question 10_1_4: What roles are defined in your incident response team?
+Question 10_1_5: Do you conduct incident response training?
+Question 10_1_6: Do you perform incident response exercises or tabletops?
+Question 10_2_1: How do you detect security incidents?
+Question 10_2_2: What is your target time for incident detection?
+Question 10_2_4: How do you contain security incidents?
+Question 10_2_6: How do you communicate during incidents?
+Question 10_3_2: How do you validate system integrity after incidents?
+Question 10_3_5: How do you track incident metrics?
+Question 14_3_16: Do you conduct physical penetration testing?
+Question 15_1_2: What security monitoring tools do you use?
+Question 15_1_4: How do you correlate security events?
+Question 15_1_5: What is your mean time to detect (MTTD) security incidents?
+Question 15_1_7: How do you handle security alerts?
+Question 15_2_2: What types of threat detection do you implement?
+Question 15_2_3: Do you conduct proactive threat hunting?
+Question 15_2_4: How do you detect advanced persistent threats (APTs)?
+Question 15_2_6: How do you validate threat detection effectiveness?
+Question 15_3_2: What types of logs do you collect?
+Question 15_3_3: How long do you retain security logs?
+Question 15_3_4: Do you protect log integrity?
+Question 15_3_5: How do you analyze security logs?
+Question 16_1_2: How often do you perform vulnerability scans?
+Question 16_1_3: What types of vulnerability assessments do you perform?
+Question 16_1_5: Do you conduct manual penetration testing?
+Question 16_1_6: How do you validate vulnerability scan results?
+Question 16_2_2: How do you prioritize vulnerabilities for remediation?
+Question 16_2_3: What are your target remediation timeframes?
+Question 16_2_4: How do you track vulnerability remediation progress?
+Question 16_2_6: How do you handle zero-day vulnerabilities?
+Question 16_3_2: How do you prioritize security patches?
+Question 16_3_3: What is your target timeframe for critical patches?
+Question 16_3_4: How do you test patches before deployment?
+Question 16_3_5: Do you have automated patch deployment capabilities?
+Question 16_3_6: How do you track patch deployment status?
+Question 16_3_7: How do you handle patch rollback procedures?
+
+QUESTIONS NEEDING 'NOT APPLICABLE' OPTION:
+--------------------------------------------------------------------------------
+Question 17_3_7: How do you communicate audit results to stakeholders?
+Question 18_1_2: How do you segment OT networks from IT networks?
+Question 18_1_4: How do you handle OT system patching?
+Question 18_1_5: Do you monitor OT network traffic?
+Question 18_2_2: How do you secure IoT device communications?
+Question 18_2_3: Do you maintain an inventory of IoT devices?
+Question 18_2_4: How do you manage IoT device firmware updates?
+Question 18_2_5: Do you monitor IoT device behavior?
+Question 19_1_3: How do you ensure model provenance and lineage?
+Question 19_1_4: Do you conduct adversarial testing on ML models?
+Question 19_1_5: How do you protect against data poisoning attacks?
+Question 19_2_1: How do you secure your ML training pipeline?
+Question 19_2_3: How do you secure model inference endpoints?
+Question 19_2_4: Do you monitor for model drift and anomalies?
+
