@@ -13,6 +13,7 @@ from app.core.config import settings
 from app.core.database import SessionLocal
 from app.models.openai_key import OpenAIAPIKey
 from app.utils.encryption import decrypt_api_key, encrypt_api_key, mask_api_key
+from app.utils.openai_helpers import get_token_params
 
 logger = logging.getLogger(__name__)
 
@@ -270,7 +271,7 @@ class OpenAIKeyManager:
             response = client.chat.completions.create(
                 model=settings.OPENAI_MODEL,
                 messages=[{"role": "user", "content": "test"}],
-                max_tokens=5,
+                **get_token_params(5),
             )
 
             if response and response.choices:

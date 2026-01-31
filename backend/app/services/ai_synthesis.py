@@ -11,6 +11,7 @@ from app.core.config import settings
 from app.schemas.ai_artifacts import SectionAIArtifact, SynthesisArtifact
 from app.services.benchmark_context import benchmark_context_service
 from app.services.openai_key_manager import OpenAIKeyManager
+from app.utils.openai_helpers import get_token_params
 
 logger = logging.getLogger(__name__)
 
@@ -143,8 +144,8 @@ async def generate_synthesis_artifact(
             model=settings.OPENAI_MODEL,
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"},
-            max_tokens=2000,  # Longer for synthesis
             temperature=0.5,  # Lower for consistency
+            **get_token_params(2000),  # Longer for synthesis
         )
         latency_ms = int((time.time() - start_time) * 1000)
 
