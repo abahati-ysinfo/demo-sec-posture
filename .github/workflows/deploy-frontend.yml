@@ -1,9 +1,14 @@
 name: Deploy Frontend to Vercel
+# Automated deployment via GitHub Actions - v6 (static export with permissions)
 
 on:
   push:
     branches:
       - main
+    paths:
+      - 'frontend/**'
+      - '.github/workflows/deploy-frontend.yml'
+  pull_request:
     paths:
       - 'frontend/**'
       - '.github/workflows/deploy-frontend.yml'
@@ -13,12 +18,13 @@ env:
   VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
   VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
 
+permissions:
+  contents: read
+  pull-requests: write
+
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    defaults:
-      run:
-        working-directory: frontend
 
     steps:
       - name: Checkout code
@@ -34,20 +40,56 @@ jobs:
         with:
           version: 9
 
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Build Next.js static export
+        working-directory: frontend
+        run: pnpm build
+
+      - name: Create Vercel output structure
+        run: |
+          mkdir -p .vercel/output/static
+          cp -r frontend/out/* .vercel/output/static/
+          echo '{"version": 3}' > .vercel/output/config.json
+
       - name: Install Vercel CLI
         run: npm install -g vercel@latest
 
-      - name: Pull Vercel Environment Information
-        run: vercel pull --yes --environment=production --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Build Project Artifacts
-        run: vercel build --prod --token=${{ secrets.VERCEL_TOKEN }}
-
-      - name: Deploy Project Artifacts to Vercel
-        id: deploy
+      - name: Deploy to Vercel (Production)
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        id: deploy-prod
         run: |
           url=$(vercel deploy --prebuilt --prod --token=${{ secrets.VERCEL_TOKEN }})
-          echo "deployment_url=$url" >> $GITHUB_OUTPUT
+          echo "url=$url" >> $GITHUB_OUTPUT
 
-      - name: Output Deployment URL
-        run: echo "Deployed to ${{ steps.deploy.outputs.deployment_url }}"
+      - name: Deploy to Vercel (Preview)
+        if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+        id: deploy-preview
+        run: |
+          url=$(vercel deploy --prebuilt --token=${{ secrets.VERCEL_TOKEN }})
+          echo "url=$url" >> $GITHUB_OUTPUT
+
+      - name: Output Production Deployment URL
+        if: github.event_name == 'push' && github.ref == 'refs/heads/main'
+        run: echo "Deployed to ${{ steps.deploy-prod.outputs.url }}"
+
+      - name: Output Preview Deployment URL
+        if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
+        run: echo "Preview deployed to ${{ steps.deploy-preview.outputs.url }}"
+
+      - name: Comment Preview URL on PR
+        if: github.event_name == 'pull_request'
+        continue-on-error: true
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const url = '${{ steps.deploy-preview.outputs.url }}';
+            if (url) {
+              github.rest.issues.createComment({
+                issue_number: context.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: '## Vercel Preview Deployment\n\nPreview URL: ' + url
+              });
+            }
