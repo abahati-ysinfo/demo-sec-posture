@@ -1,5 +1,5 @@
 name: Deploy Frontend to Vercel
-# Automated deployment via GitHub Actions
+# Automated deployment via GitHub Actions - v2
 
 on:
   push:
