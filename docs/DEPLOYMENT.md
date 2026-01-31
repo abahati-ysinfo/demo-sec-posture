@@ -391,32 +391,27 @@ flyctl postgres restore --app echostor-db --backup-id <backup-id>
 
 ### GitHub Actions Workflows
 
-The repository includes three GitHub Actions workflows:
+The repository includes deployment workflows that automatically deploy when changes are pushed to `main`:
 
-#### 1. Backend CI (`/.github/workflows/backend-ci.yml`)
-- **Triggers**: Push to main, PR with backend changes
-- **Steps**: Lint (Ruff), format check, type check (mypy), tests (pytest)
-- **Coverage**: Requires 80% test coverage
-
-#### 2. Backend Deployment (`/.github/workflows/deploy-backend.yml`)
-- **Triggers**: Push to main with backend changes
-- **Steps**: Deploy to Fly.io automatically
+#### 1. Backend Deployment (`/.github/workflows/deploy-backend.yml`)
+- **Triggers**: Push to main with backend changes, or manual trigger
+- **Steps**: Deploy to Fly.io using `flyctl deploy --remote-only`
 - **Requirements**: `FLY_API_TOKEN` secret configured
 
-#### 3. Frontend Deployment (`/.github/workflows/deploy-frontend.yml`)
-- **Triggers**: Push to main with frontend changes  
-- **Steps**: Lint, format check, build, deploy to Vercel
-- **Requirements**: Vercel secrets configured
+#### 2. Frontend Deployment (`/.github/workflows/deploy-frontend.yml`)
+- **Triggers**: Push to main with frontend changes, or manual trigger
+- **Steps**: Pull Vercel environment, build, deploy to production
+- **Requirements**: `VERCEL_TOKEN`, `VERCEL_ORG_ID`, `VERCEL_PROJECT_ID` secrets configured
 
 ### Configure GitHub Secrets
 
-Add the following secrets to your GitHub repository:
+Add the following secrets to your GitHub repository (Settings > Secrets and variables > Actions):
 
 ```bash
-# Fly.io Deployment
+# Fly.io Deployment (Backend)
 FLY_API_TOKEN=your-fly-io-api-token
 
-# Vercel Deployment (if using GitHub Actions)
+# Vercel Deployment (Frontend)
 VERCEL_TOKEN=your-vercel-token
 VERCEL_ORG_ID=your-vercel-org-id
 VERCEL_PROJECT_ID=your-vercel-project-id
@@ -424,17 +419,37 @@ VERCEL_PROJECT_ID=your-vercel-project-id
 
 ### Get Required Tokens
 
+#### Fly.io API Token
 ```bash
-# Fly.io API Token
+# Login to Fly.io
+flyctl auth login
+
+# Get your API token
 flyctl auth token
-
-# Vercel Token
-vercel login
-# Go to https://vercel.com/account/tokens to create a token
-
-# Vercel Org ID and Project ID
-# Found in your project settings on Vercel dashboard
 ```
+
+#### Vercel Tokens
+1. **VERCEL_TOKEN**: Go to https://vercel.com/account/tokens and create a new token
+2. **VERCEL_ORG_ID** and **VERCEL_PROJECT_ID**: 
+   - Go to your Vercel project settings
+   - Scroll to "Project ID" section
+   - Or run `vercel link` in the frontend directory and check `.vercel/project.json`
+
+```bash
+# Alternative: Get Vercel IDs via CLI
+cd frontend
+vercel link
+cat .vercel/project.json
+# Output contains "orgId" and "projectId"
+```
+
+### Manual Deployment Triggers
+
+Both workflows support manual triggers via GitHub Actions UI:
+1. Go to Actions tab in your repository
+2. Select the workflow (Deploy Frontend or Deploy Backend)
+3. Click "Run workflow"
+4. Select the branch and click "Run workflow"
 
 ## 📊 Monitoring and Health Checks
 
