@@ -10,6 +10,7 @@ from sqlalchemy.orm import Session
 from app.core.config import settings
 from app.schemas.ai_artifacts import SectionAIArtifact, SynthesisArtifact
 from app.services.openai_key_manager import OpenAIKeyManager
+from app.utils.openai_helpers import get_token_params
 
 logger = logging.getLogger(__name__)
 
@@ -205,8 +206,8 @@ async def generate_enhanced_executive_summary(
         response = await client.chat.completions.create(
             model=settings.OPENAI_MODEL,
             messages=[{"role": "user", "content": prompt}],
-            max_tokens=1500,  # Dedicated token budget for executive summary
             temperature=0.5,  # Balanced creativity and consistency
+            **get_token_params(1500),  # Dedicated token budget for executive summary
         )
         latency_ms = int((time.time() - start_time) * 1000)
 
