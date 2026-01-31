@@ -258,16 +258,21 @@ flyctl monitor
    - Connect your GitHub account
    - Select the repository
 
-2. **Configure Build Settings**
+2. **Configure Root Directory (Important!)**
+   - In Project Settings > General, set **Root Directory** to `frontend`
+   - This tells Vercel to deploy from the frontend folder directly
+   - Vercel will auto-detect Next.js and use the correct build settings
+
+3. **Build Settings** (auto-detected when Root Directory is set to `frontend`)
    ```bash
-   # Build Command
-   cd frontend && pnpm run build
+   # Build Command (auto-detected)
+   pnpm run build
    
-   # Output Directory
-   frontend/.next
+   # Output Directory (auto-detected for static export)
+   out
    
-   # Install Command
-   cd frontend && pnpm install
+   # Install Command (auto-detected)
+   pnpm install
    ```
 
 ### Environment Variables
@@ -296,7 +301,7 @@ npm install -g vercel
 # Login to Vercel
 vercel login
 
-# Deploy
+# Deploy (Vercel will auto-detect Next.js settings)
 vercel --prod
 
 # Set environment variables
@@ -306,6 +311,8 @@ vercel env add NEXT_PUBLIC_API_URL production
 vercel env add NEXT_PUBLIC_APP_NAME production
 # Enter: EchoStor Security Posture Assessment
 ```
+
+**Note**: When deploying via CLI from the `frontend` directory, Vercel will correctly detect the Next.js project. When using GitHub integration, make sure to set the Root Directory to `frontend` in project settings.
 
 ### Custom Domain Setup
 
