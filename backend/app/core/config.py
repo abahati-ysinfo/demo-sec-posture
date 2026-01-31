@@ -48,7 +48,8 @@ class Settings(BaseSettings):
     AI_FALLBACK_MODEL: str = "gpt-3.5-turbo"
 
     ADMIN_EMAIL: str = "admin@example.com"
-    ADMIN_PASSWORD_HASH: str | None = None
+    ADMIN_PASSWORD: str | None = None  # Plain-text password (from ADMIN_USER secret)
+    ADMIN_PASSWORD_HASH: str | None = None  # Pre-hashed password (alternative)
 
     ALLOWED_ORIGINS: list[str] = [
         "http://localhost:3000",
