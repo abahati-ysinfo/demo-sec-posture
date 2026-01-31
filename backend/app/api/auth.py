@@ -85,13 +85,21 @@ async def login(
     db: Session = Depends(get_db),
 ) -> Token:
     if user_credentials.email == settings.ADMIN_EMAIL:
-        if not settings.ADMIN_PASSWORD_HASH:
+        password_valid = False
+
+        if settings.ADMIN_PASSWORD:
+            password_valid = user_credentials.password == settings.ADMIN_PASSWORD
+        elif settings.ADMIN_PASSWORD_HASH:
+            password_valid = verify_password(
+                user_credentials.password, settings.ADMIN_PASSWORD_HASH
+            )
+        else:
             raise HTTPException(
                 status_code=status.HTTP_500_INTERNAL_SERVER_ERROR,
                 detail="Admin password not configured",
             )
 
-        if not verify_password(user_credentials.password, settings.ADMIN_PASSWORD_HASH):
+        if not password_valid:
             raise HTTPException(
                 status_code=status.HTTP_401_UNAUTHORIZED,
                 detail="Incorrect email or password",
