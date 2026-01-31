@@ -6,6 +6,7 @@ primary_region = "iad"
 [deploy]
   strategy = "rolling"
   release_command = "poetry run alembic upgrade head"
+  release_command_timeout = "120s"
 
 [[regions]]
   name = "iad"  # US East Coast (primary)
