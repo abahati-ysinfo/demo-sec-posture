@@ -40,13 +40,11 @@ jobs:
         run: npm install -g vercel@latest
 
       - name: Pull Vercel Environment Information
-        working-directory: frontend
         run: vercel pull --yes --environment=preview --token=${{ secrets.VERCEL_TOKEN }}
 
       - name: Deploy to Vercel (Production)
         if: github.event_name == 'push' && github.ref == 'refs/heads/main'
         id: deploy-prod
-        working-directory: frontend
         run: |
           url=$(vercel deploy --prod --token=${{ secrets.VERCEL_TOKEN }})
           echo "url=$url" >> $GITHUB_OUTPUT
@@ -54,7 +52,6 @@ jobs:
       - name: Deploy to Vercel (Preview)
         if: github.event_name == 'pull_request' || github.event_name == 'workflow_dispatch'
         id: deploy-preview
-        working-directory: frontend
         run: |
           url=$(vercel deploy --token=${{ secrets.VERCEL_TOKEN }})
           echo "url=$url" >> $GITHUB_OUTPUT
