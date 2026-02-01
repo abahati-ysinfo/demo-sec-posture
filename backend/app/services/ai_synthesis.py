@@ -135,6 +135,7 @@ async def generate_synthesis_artifact(
         section_summaries, scores["overall"]["percentage"], curated_context
     )
 
+    key_id: str | None = None
     try:
         key_id, api_key = key_manager.get_next_key()
         client = AsyncOpenAI(api_key=api_key, timeout=settings.OPENAI_TIMEOUT)
@@ -162,7 +163,7 @@ async def generate_synthesis_artifact(
 
     except Exception as e:
         logger.error(f"Failed to generate synthesis: {e}")
-        if key_manager:
+        if key_id is not None:
             key_manager.record_failure(key_id, e)
 
         return create_minimal_synthesis(scores["overall"]["percentage"])
