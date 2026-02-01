@@ -1,6 +1,6 @@
-# Contributing to EchoStor Security Posture Assessment Tool
+# Contributing to Security Posture Assessment Tool
 
-Thank you for your interest in contributing to the EchoStor Security Posture Assessment Tool! This document provides guidelines and information for contributors.
+Thank you for your interest in contributing to the Security Posture Assessment Tool! This document provides guidelines and information for contributors.
 
 ## 📋 Table of Contents
 
@@ -480,4 +480,4 @@ If you need help:
 
 ---
 
-Thank you for contributing to the EchoStor Security Posture Assessment Tool! 🎉
+Thank you for contributing to the Security Posture Assessment Tool! 🎉

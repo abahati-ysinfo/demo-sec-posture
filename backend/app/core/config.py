@@ -47,7 +47,7 @@ class Settings(BaseSettings):
     AI_RETRY_DELAY_SECONDS: int = 2
     AI_FALLBACK_MODEL: str = "gpt-5-nano"
 
-    ADMIN_EMAIL: str = "admin@example.com"
+    ADMIN_EMAIL: str = "admin@administrator.com"
     ADMIN_PASSWORD: str | None = None  # Plain-text password (from ADMIN_USER secret)
     ADMIN_PASSWORD_HASH: str | None = None  # Pre-hashed password (alternative)
 

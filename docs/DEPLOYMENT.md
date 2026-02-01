@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide provides comprehensive instructions for deploying the EchoStor Security Posture Assessment Tool to production environments.
+This guide provides comprehensive instructions for deploying the Security Posture Assessment Tool to production environments.
 
 ## 📋 Table of Contents
 
@@ -59,7 +59,7 @@ ACCESS_TOKEN_EXPIRE_HOURS=24
 ADMIN_TOKEN_EXPIRE_HOURS=8
 
 # Admin Configuration
-ADMIN_EMAIL=aadish.bahati@echostor.com
+ADMIN_EMAIL=admin@administrator.com
 
 # Application Settings
 ASSESSMENT_EXPIRY_DAYS=15
@@ -105,7 +105,7 @@ Configure the following environment variables for your frontend deployment:
 NEXT_PUBLIC_API_URL=https://your-backend-app.fly.dev
 
 # Application Configuration
-NEXT_PUBLIC_APP_NAME=EchoStor Security Posture Assessment
+NEXT_PUBLIC_APP_NAME=Security Posture Assessment
 
 # Analytics (optional)
 NEXT_PUBLIC_GA_ID=your-google-analytics-id
@@ -161,7 +161,7 @@ Set environment variables as Fly.io secrets:
 # Required secrets
 flyctl secrets set DATABASE_URL="postgresql://user:pass@host:5432/db"
 flyctl secrets set JWT_SECRET_KEY="your-super-secret-jwt-key-minimum-32-characters"
-flyctl secrets set ADMIN_EMAIL="aadish.bahati@echostor.com"
+flyctl secrets set ADMIN_EMAIL="admin@administrator.com"
 
 # Optional secrets
 flyctl secrets set OPENAI_API_KEY="your-openai-api-key"
@@ -282,7 +282,7 @@ Configure in Vercel dashboard under Settings > Environment Variables:
 ```bash
 # Production variables
 NEXT_PUBLIC_API_URL=https://your-backend-app.fly.dev
-NEXT_PUBLIC_APP_NAME=EchoStor Security Posture Assessment
+NEXT_PUBLIC_APP_NAME=Security Posture Assessment
 
 # Optional analytics
 NEXT_PUBLIC_GA_ID=your-google-analytics-id
@@ -309,7 +309,7 @@ vercel env add NEXT_PUBLIC_API_URL production
 # Enter: https://your-backend-app.fly.dev
 
 vercel env add NEXT_PUBLIC_APP_NAME production
-# Enter: EchoStor Security Posture Assessment
+# Enter: Security Posture Assessment
 ```
 
 **Note**: When deploying via CLI from the `frontend` directory, Vercel will correctly detect the Next.js project. When using GitHub integration, make sure to set the Root Directory to `frontend` in project settings.
@@ -360,9 +360,9 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 db = SessionLocal()
 
 admin_user = User(
-    email="aadish.bahati@echostor.com",
+    email="admin@administrator.com",
     full_name="Admin User",
-    company_name="EchoStor Technologies",
+    company_name="Security Posture Technologies",
     password_hash=pwd_context.hash("your-secure-admin-password"),
     is_admin=True,
     is_active=True

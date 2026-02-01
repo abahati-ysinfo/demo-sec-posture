@@ -1744,7 +1744,7 @@ def generate_report_html(
                 <p><strong>Details:</strong></p>
                 <p>{{ assessment.consultation_details }}</p>
                 {% endif %}
-                <p><em>An EchoStor security consultant will contact you to discuss your specific needs and how we can help improve your security posture.</em></p>
+                <p><em>A security consultant will contact you to discuss your specific needs and how we can help improve your security posture.</em></p>
             </div>
         </div>
         {% endif %}
@@ -1754,7 +1754,7 @@ def generate_report_html(
             <p>This assessment provides general guidance based on industry best practices and your self-reported responses. 
             The scores and recommendations are indicative and should be validated through comprehensive security audits. 
             For detailed security architecture planning, penetration testing, or compliance assessments, 
-            please contact EchoStor's security team for a professional evaluation tailored to your organization's specific needs.</p>
+            please contact our security team for a professional evaluation tailored to your organization's specific needs.</p>
         </div>
         </div>
     </body>
@@ -2291,7 +2291,7 @@ def generate_ai_report_html(
             
             <p>This report represents a point-in-time assessment based on the responses provided. Security posture is dynamic and should be reassessed regularly (recommended: quarterly) to account for evolving threats, technology changes, and business growth.</p>
             
-            <p><strong>For comprehensive security architecture planning, incident response preparation, or detailed professional assessment, please contact EchoStor's security team.</strong></p>
+            <p><strong>For comprehensive security architecture planning, incident response preparation, or detailed professional assessment, please contact our security team.</strong></p>
             
             <p style="margin-top: 20px; font-size: 10px; color: #666;">
                 <strong>Report ID:</strong> {{ report_id }}<br>

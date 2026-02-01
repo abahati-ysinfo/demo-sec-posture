@@ -26,9 +26,9 @@ def generate_secure_password(length: int = 16) -> str:
 
 def setup_production_admin() -> None:
     """Set up admin user for production deployment"""
-    admin_email = "aadish.bahati@echostor.com"
+    admin_email = "admin@administrator.com"
     admin_password = generate_secure_password()
-    admin_name = "EchoStor Admin"
+    admin_name = "Administrator"
 
     db = SessionLocal()
     try:
@@ -44,7 +44,7 @@ def setup_production_admin() -> None:
             id=str(uuid.uuid4()),
             email=admin_email,
             full_name=admin_name,
-            company_name="EchoStor",
+            company_name="Security Posture",
             password_hash=get_password_hash(admin_password),
             is_active=True,
             is_admin=True,

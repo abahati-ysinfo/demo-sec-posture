@@ -877,7 +877,7 @@ export default function AssessmentQuestions() {
                     Consultation Interest
                   </h3>
                   <p className="text-gray-600 mb-4">
-                    Would you like to be contacted by EchoStor&apos;s Security Specialist for
+                    Would you like to be contacted by our Security Specialist for
                     consultation on any security matters?
                   </p>
 

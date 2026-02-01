@@ -123,7 +123,7 @@ export default function AdminConsultations() {
 
                         <div className="mt-4 flex justify-end">
                           <a
-                            href={`mailto:${consultation.user_email}?subject=EchoStor Security Consultation&body=Hello ${consultation.user_name},%0D%0A%0D%0AThank you for your interest in our security consultation services.`}
+                            href={`mailto:${consultation.user_email}?subject=Security Consultation&body=Hello ${consultation.user_name},%0D%0A%0D%0AThank you for your interest in our security consultation services.`}
                             className="btn-primary inline-flex items-center"
                           >
                             <EnvelopeIcon className="h-4 w-4 mr-2" />

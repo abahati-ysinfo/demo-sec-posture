@@ -1,8 +1,8 @@
 {
-  "name": "echostor-security-posture-tool",
+  "name": "security-posture-tool",
   "version": "1.0.0",
   "private": true,
-  "description": "EchoStor Security Posture Assessment Tool - Root workspace configuration",
+  "description": "Security Posture Assessment Tool - Root workspace configuration",
   "packageManager": "pnpm@9.15.9",
   "scripts": {
     "frontend:dev": "cd frontend && pnpm dev",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/ec-aadishbahati/echostor-security-posture-tool.git"
+    "url": "https://github.com/abahati-ysinfo/demo-sec-posture.git"
   },
   "keywords": [
     "security",
@@ -19,6 +19,6 @@
     "cybersecurity",
     "posture"
   ],
-  "author": "EchoStor",
+  "author": "Security Posture Team",
   "license": "UNLICENSED"
 }

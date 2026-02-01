@@ -3,9 +3,9 @@ version: '3.8'
 services:
   postgres:
     image: postgres:15-alpine
-    container_name: echostor_postgres
+    container_name: secposture_postgres
     environment:
-      POSTGRES_USER: echostor
+      POSTGRES_USER: secposture
       POSTGRES_PASSWORD: dev_password_change_in_production
       POSTGRES_DB: security_posture
     ports:
@@ -13,7 +13,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
     healthcheck:
-      test: ["CMD-SHELL", "pg_isready -U echostor"]
+      test: ["CMD-SHELL", "pg_isready -U secposture"]
       interval: 10s
       timeout: 5s
       retries: 5
@@ -22,14 +22,14 @@ services:
     build:
       context: ./backend
       dockerfile: Dockerfile
-    container_name: echostor_backend
+    container_name: secposture_backend
     environment:
-      DATABASE_URL: postgresql://echostor:dev_password_change_in_production@postgres:5432/security_posture
+      DATABASE_URL: postgresql://secposture:dev_password_change_in_production@postgres:5432/security_posture
       JWT_SECRET_KEY: dev-secret-key-change-in-production-min-32-chars
       JWT_ALGORITHM: HS256
       ACCESS_TOKEN_EXPIRE_HOURS: 24
       ADMIN_TOKEN_EXPIRE_HOURS: 8
-      ADMIN_EMAIL: aadish.bahati@echostor.com
+      ADMIN_EMAIL: admin@administrator.com
       ASSESSMENT_EXPIRY_DAYS: 15
       AUTO_SAVE_INTERVAL_MINUTES: 10
       ALLOWED_ORIGINS: '["http://localhost:3000","http://frontend:3000"]'
@@ -57,4 +57,4 @@ volumes:
 
 networks:
   default:
-    name: echostor_network
+    name: secposture_network
