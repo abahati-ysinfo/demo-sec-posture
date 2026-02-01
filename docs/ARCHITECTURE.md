@@ -1,6 +1,6 @@
 # System Architecture
 
-This document provides a comprehensive overview of the Security Posture Security Posture Assessment Tool architecture, including system design, database schema, deployment topology, and security architecture.
+This document provides a comprehensive overview of the Security Posture Assessment Tool architecture, including system design, database schema, deployment topology, and security architecture.
 
 ## 📋 Table of Contents
 

@@ -1,6 +1,6 @@
 # API Documentation
 
-This document provides comprehensive documentation for the Security Posture Security Posture Assessment Tool API endpoints.
+This document provides comprehensive documentation for the Security Posture Assessment Tool API endpoints.
 
 ## 📋 Table of Contents
 

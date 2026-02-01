@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-This guide provides solutions for common issues encountered while developing, deploying, and maintaining the Security Posture Security Posture Assessment Tool.
+This guide provides solutions for common issues encountered while developing, deploying, and maintaining the Security Posture Assessment Tool.
 
 ## 📋 Table of Contents
 
@@ -170,7 +170,7 @@ nano .env  # Edit with your values
 cd frontend
 cat > .env.local << EOF
 NEXT_PUBLIC_API_URL=http://localhost:8000
-NEXT_PUBLIC_APP_NAME=Security Posture Security Posture Assessment
+NEXT_PUBLIC_APP_NAME=Security Posture Assessment
 EOF
 
 # Check if variables are loaded

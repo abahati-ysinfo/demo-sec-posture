@@ -1,6 +1,6 @@
 # Deployment Guide
 
-This guide provides comprehensive instructions for deploying the Security Posture Security Posture Assessment Tool to production environments.
+This guide provides comprehensive instructions for deploying the Security Posture Assessment Tool to production environments.
 
 ## 📋 Table of Contents
 
@@ -105,7 +105,7 @@ Configure the following environment variables for your frontend deployment:
 NEXT_PUBLIC_API_URL=https://your-backend-app.fly.dev
 
 # Application Configuration
-NEXT_PUBLIC_APP_NAME=Security Posture Security Posture Assessment
+NEXT_PUBLIC_APP_NAME=Security Posture Assessment
 
 # Analytics (optional)
 NEXT_PUBLIC_GA_ID=your-google-analytics-id
@@ -282,7 +282,7 @@ Configure in Vercel dashboard under Settings > Environment Variables:
 ```bash
 # Production variables
 NEXT_PUBLIC_API_URL=https://your-backend-app.fly.dev
-NEXT_PUBLIC_APP_NAME=Security Posture Security Posture Assessment
+NEXT_PUBLIC_APP_NAME=Security Posture Assessment
 
 # Optional analytics
 NEXT_PUBLIC_GA_ID=your-google-analytics-id
@@ -309,7 +309,7 @@ vercel env add NEXT_PUBLIC_API_URL production
 # Enter: https://your-backend-app.fly.dev
 
 vercel env add NEXT_PUBLIC_APP_NAME production
-# Enter: Security Posture Security Posture Assessment
+# Enter: Security Posture Assessment
 ```
 
 **Note**: When deploying via CLI from the `frontend` directory, Vercel will correctly detect the Next.js project. When using GitHub integration, make sure to set the Root Directory to `frontend` in project settings.
