@@ -15,12 +15,11 @@ class Settings(BaseSettings):
     ADMIN_TOKEN_EXPIRE_HOURS: int = 8
 
     OPENAI_API_KEY: str | None = None
-    OPENAI_MODEL: str = "gpt-5-nano"
+    OPENAI_MODEL: str = "gpt-5-nano"  # Change via env var - token params auto-detected
     OPENAI_MAX_TOKENS: int = 10000
     OPENAI_TEMPERATURE: float = 0.5
     OPENAI_TIMEOUT: int = 60
     OPENAI_KEYS_ENCRYPTION_KEY: str | None = None
-    OPENAI_USE_COMPLETION_TOKENS: bool = True  # Use max_completion_tokens for newer models
 
     AI_PROMPT_VERSION: str = (
         "v2.3"  # Added support for user comments and enhanced option context

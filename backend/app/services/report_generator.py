@@ -65,7 +65,7 @@ from app.services.question_parser import (
 )
 from app.services.security_metrics import security_metrics
 from app.services.storage import get_storage_service
-from app.utils.openai_helpers import get_token_params
+from app.utils.openai_helpers import get_temperature_param, get_token_params
 
 logger = logging.getLogger(__name__)
 
@@ -689,7 +689,7 @@ def generate_ai_insights(
                         model=settings.OPENAI_MODEL,
                         messages=[{"role": "user", "content": prompt}],
                         response_format={"type": "json_object"},
-                        temperature=settings.OPENAI_TEMPERATURE,
+                        **get_temperature_param(settings.OPENAI_TEMPERATURE),
                         **get_token_params(settings.OPENAI_MAX_TOKENS),
                     )
                     end_time = datetime.now()
@@ -1060,7 +1060,7 @@ async def generate_ai_insights_async(
                             model=settings.OPENAI_MODEL,
                             messages=[{"role": "user", "content": prompt}],
                             response_format={"type": "json_object"},
-                            temperature=settings.OPENAI_TEMPERATURE,
+                            **get_temperature_param(settings.OPENAI_TEMPERATURE),
                             **get_token_params(settings.OPENAI_MAX_TOKENS),
                         )
                         latency_ms = int((time.time() - start_time) * 1000)
@@ -1165,8 +1165,8 @@ async def generate_ai_insights_async(
                                                 {"role": "user", "content": prompt}
                                             ],
                                             response_format={"type": "json_object"},
-                                            max_tokens=800,  # Shorter for fallback
-                                            temperature=0.5,
+                                            **get_temperature_param(0.5, settings.AI_FALLBACK_MODEL),
+                                            **get_token_params(800, settings.AI_FALLBACK_MODEL),
                                         )
                                     )
 

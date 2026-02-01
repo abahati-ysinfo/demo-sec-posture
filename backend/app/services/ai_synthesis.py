@@ -11,7 +11,7 @@ from app.core.config import settings
 from app.schemas.ai_artifacts import SectionAIArtifact, SynthesisArtifact
 from app.services.benchmark_context import benchmark_context_service
 from app.services.openai_key_manager import OpenAIKeyManager
-from app.utils.openai_helpers import get_token_params
+from app.utils.openai_helpers import get_temperature_param, get_token_params
 
 logger = logging.getLogger(__name__)
 
@@ -144,7 +144,7 @@ async def generate_synthesis_artifact(
             model=settings.OPENAI_MODEL,
             messages=[{"role": "user", "content": prompt}],
             response_format={"type": "json_object"},
-            temperature=0.5,  # Lower for consistency
+            **get_temperature_param(0.5),
             **get_token_params(2000),  # Longer for synthesis
         )
         latency_ms = int((time.time() - start_time) * 1000)
@@ -170,14 +170,33 @@ async def generate_synthesis_artifact(
 
 def create_minimal_synthesis(overall_score: float) -> SynthesisArtifact:
     """Create minimal synthesis when AI fails"""
+    # Ensure strings meet minimum length requirements from schema
+    executive_summary = (
+        f"Security assessment completed with overall score of {overall_score:.1f}%. "
+        "Detailed analysis is available in the section-by-section breakdown below. "
+        "AI-powered synthesis is temporarily unavailable. Please review individual "
+        "section analyses for specific findings, gaps, and recommendations. "
+        "Contact support if you need assistance with interpreting the results."
+    )
+    overall_risk_explanation = (
+        "Manual review of section analyses is recommended to understand the full "
+        "security posture. Each section contains detailed findings that should be "
+        "reviewed by qualified security personnel."
+    )
+    long_term_strategy = (
+        "Conduct a comprehensive security program review with a qualified consultant "
+        "to develop a tailored roadmap. Focus on addressing critical gaps identified "
+        "in individual sections and establishing a continuous improvement process "
+        "for security maturity advancement."
+    )
     return SynthesisArtifact(
         schema_version="1.0",
-        executive_summary=f"Security assessment completed with overall score of {overall_score}%. Detailed analysis available in section-by-section breakdown. AI synthesis temporarily unavailable.",
+        executive_summary=executive_summary,
         overall_risk_level="Medium" if overall_score >= 60 else "High",
-        overall_risk_explanation="Manual review of section analyses recommended.",
+        overall_risk_explanation=overall_risk_explanation,
         cross_cutting_themes=[],
         top_10_initiatives=[],
         quick_wins=["Review section-by-section recommendations"],
-        long_term_strategy="Conduct comprehensive security program review with qualified consultant.",
+        long_term_strategy=long_term_strategy,
         confidence_score=0.0,
     )
