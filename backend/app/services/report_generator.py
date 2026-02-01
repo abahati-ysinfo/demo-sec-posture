@@ -1038,6 +1038,7 @@ async def generate_ai_insights_async(
 
                 await asyncio.sleep(random.uniform(0, 0.5))
 
+                key_id: str | None = None
                 for attempt in range(settings.AI_MAX_RETRIES):
                     try:
                         key_id, api_key = key_manager.get_next_key()
@@ -1142,7 +1143,8 @@ async def generate_ai_insights_async(
                         logger.warning(
                             f"Retryable error for section {section.id} (attempt {attempt + 1}/{settings.AI_MAX_RETRIES}): {e}"
                         )
-                        key_manager.record_failure(key_id, e)
+                        if key_id is not None:
+                            key_manager.record_failure(key_id, e)
 
                         if attempt < settings.AI_MAX_RETRIES - 1:
                             await asyncio.sleep(
@@ -1208,7 +1210,8 @@ async def generate_ai_insights_async(
                         logger.error(
                             f"JSON validation failed for section {section.id}: {e.errors()}"
                         )
-                        key_manager.record_failure(key_id, e)
+                        if key_id is not None:
+                            key_manager.record_failure(key_id, e)
                         db.rollback()
                         degraded_artifact = create_degraded_artifact(section.id)
                         return (section.id, degraded_artifact, True)
@@ -1217,7 +1220,8 @@ async def generate_ai_insights_async(
                         logger.exception(
                             f"Unexpected error for section {section.id}: {e}"
                         )
-                        key_manager.record_failure(key_id, e)
+                        if key_id is not None:
+                            key_manager.record_failure(key_id, e)
                         db.rollback()
                         degraded_artifact = create_degraded_artifact(section.id)
                         return (section.id, degraded_artifact, True)

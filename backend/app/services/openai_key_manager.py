@@ -185,10 +185,15 @@ class OpenAIKeyManager:
         if not key:
             return
 
-        key.error_count += 1  # type: ignore[assignment]
-
         error_str = str(error).lower()
         is_rate_limit = "429" in error_str or "rate limit" in error_str
+        is_timeout = "timeout" in error_str or "timed out" in error_str
+        is_auth_error = "401" in error_str or "invalid" in error_str or "unauthorized" in error_str
+
+        # Only increment error count for non-timeout errors
+        # Timeouts are often transient network issues, not key problems
+        if not is_timeout:
+            key.error_count += 1  # type: ignore[assignment]
 
         if is_rate_limit:
             cooldown_minutes = min(2 ** int(key.error_count), 60)  # Max 60 minutes
@@ -196,6 +201,12 @@ class OpenAIKeyManager:
             logger.warning(
                 f"Rate limit hit for key {key.key_name}. "
                 f"Cooldown until {key.cooldown_until} ({cooldown_minutes} minutes)"
+            )
+        elif is_auth_error:
+            # Immediately deactivate for authentication errors
+            key.is_active = False  # type: ignore[assignment]
+            logger.error(
+                f"Key {key.key_name} deactivated due to authentication error: {error}"
             )
         elif key.error_count >= 5:
             key.is_active = False  # type: ignore[assignment]
