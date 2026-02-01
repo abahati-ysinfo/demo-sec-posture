@@ -40,7 +40,7 @@ def create_admin_user() -> None:
             id=str(uuid.uuid4()),
             email=admin_email,
             full_name=admin_name,
-            company_name="EchoStor",
+            company_name="Security Posture",
             password_hash=get_password_hash(admin_password),
             is_active=True,
         )

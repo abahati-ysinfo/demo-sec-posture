@@ -169,7 +169,7 @@ async def get_current_user_from_token(token: str, db: Session) -> CurrentUserRes
             id="admin",
             email=settings.ADMIN_EMAIL,
             full_name="Administrator",
-            company_name="EchoStor",
+            company_name="Security Posture",
             is_admin=True,
             is_active=True,
         )

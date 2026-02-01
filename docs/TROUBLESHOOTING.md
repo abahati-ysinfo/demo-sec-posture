@@ -1,6 +1,6 @@
 # Troubleshooting Guide
 
-This guide provides solutions for common issues encountered while developing, deploying, and maintaining the EchoStor Security Posture Assessment Tool.
+This guide provides solutions for common issues encountered while developing, deploying, and maintaining the Security Posture Security Posture Assessment Tool.
 
 ## 📋 Table of Contents
 
@@ -170,7 +170,7 @@ nano .env  # Edit with your values
 cd frontend
 cat > .env.local << EOF
 NEXT_PUBLIC_API_URL=http://localhost:8000
-NEXT_PUBLIC_APP_NAME=EchoStor Security Posture Assessment
+NEXT_PUBLIC_APP_NAME=Security Posture Security Posture Assessment
 EOF
 
 # Check if variables are loaded
@@ -207,7 +207,7 @@ ADMIN_TOKEN_EXPIRE_HOURS=8
 **Solutions**:
 ```bash
 # Check admin email configuration
-echo $ADMIN_EMAIL  # Should be: aadish.bahati@echostor.com
+echo $ADMIN_EMAIL  # Should be: admin@administrator.com
 
 # Create/recreate admin user
 cd backend
@@ -220,7 +220,7 @@ pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 db = SessionLocal()
 
 # Check if admin exists
-admin = db.query(User).filter(User.email == "aadish.bahati@echostor.com").first()
+admin = db.query(User).filter(User.email == "admin@administrator.com").first()
 if admin:
     # Update password
     admin.password_hash = pwd_context.hash("your-new-password")
@@ -229,9 +229,9 @@ if admin:
 else:
     # Create new admin
     admin = User(
-        email="aadish.bahati@echostor.com",
+        email="admin@administrator.com",
         full_name="Admin User",
-        company_name="EchoStor Technologies",
+        company_name="Security Posture Technologies",
         password_hash=pwd_context.hash("your-new-password"),
         is_admin=True,
         is_active=True
@@ -717,7 +717,7 @@ telnet your-db-host 5432
 ### Contact Support
 
 - **GitHub Issues**: Create an issue with detailed information
-- **Email Support**: aadish.bahati@echostor.com
+- **Email Support**: admin@administrator.com
 - **Emergency**: For critical production issues
 
 ### Additional Resources

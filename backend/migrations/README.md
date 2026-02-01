@@ -1,6 +1,6 @@
 # Database Migrations
 
-This directory contains SQL migration scripts for the EchoStor Security Posture Assessment database.
+This directory contains SQL migration scripts for the Security Posture Security Posture Assessment database.
 
 ## How to Apply Migrations
 

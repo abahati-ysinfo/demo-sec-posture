@@ -1,4 +1,4 @@
-# EchoStor Security Posture Assessment Tool
+# Security Posture Assessment Tool
 
 A comprehensive security posture assessment platform that helps organizations evaluate their cybersecurity maturity across 19 key domains with 409 detailed questions. Built with modern web technologies and designed for scalability, reliability, and user experience.
 
@@ -76,8 +76,8 @@ For detailed architecture information, see [docs/ARCHITECTURE.md](docs/ARCHITECT
 
 ### Option 1: Docker Compose (Recommended for Development)
 ```bash
-git clone https://github.com/ec-aadishbahati/echostor-security-posture-tool.git
-cd echostor-security-posture-tool
+git clone https://github.com/abahati-ysinfo/demo-sec-posture.git
+cd demo-sec-posture
 docker-compose up -d
 ```
 
@@ -154,7 +154,7 @@ For detailed deployment instructions, see [docs/DEPLOYMENT.md](docs/DEPLOYMENT.m
 ## 📊 Project Structure
 
 ```
-echostor-security-posture-tool/
+demo-sec-posture/
 ├── frontend/                   # Next.js frontend application
 │   ├── src/
 │   │   ├── pages/             # Next.js pages and API routes
@@ -191,16 +191,10 @@ We welcome contributions! Please read our [Contributing Guidelines](CONTRIBUTING
 
 ## 📄 License
 
-Proprietary - EchoStor Technologies. All rights reserved.
+Proprietary. All rights reserved.
 
 ## 📞 Support
 
 For questions, issues, or support:
-- **Email**: aadish.bahati@echostor.com  
 - **GitHub Issues**: For bug reports and feature requests
-
----
-
-**Link to Devin run**: https://app.devin.ai/sessions/0f848b71231542f8aa2aae1b29c76e67  
-**Requested by**: @ec-aadishbahati
 

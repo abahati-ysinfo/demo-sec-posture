@@ -24,7 +24,7 @@ ADMIN_LOGIN_USER=admin@echostor.com
 ADMIN_LOGIN_PASSWORD=your-secure-password
 
 # Option B: Use email and password hash
-ADMIN_EMAIL=aadish.bahati@echostor.com
+ADMIN_EMAIL=admin@administrator.com
 ADMIN_PASSWORD_HASH=$2b$12$your-bcrypt-hash
 ```
 

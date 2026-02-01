@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document describes the testing strategy and infrastructure for the EchoStor Security Posture Assessment Tool. The project uses pytest for backend testing, Jest with React Testing Library for frontend unit testing, and Playwright for end-to-end testing.
+This document describes the testing strategy and infrastructure for the Security Posture Security Posture Assessment Tool. The project uses pytest for backend testing, Jest with React Testing Library for frontend unit testing, and Playwright for end-to-end testing.
 
 ## End-to-End Testing
 

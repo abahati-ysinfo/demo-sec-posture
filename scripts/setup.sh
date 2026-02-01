@@ -3,7 +3,7 @@
 
 set -e
 
-echo "🚀 Setting up EchoStor Security Posture Assessment Tool..."
+echo "🚀 Setting up Security Posture Assessment Tool..."
 
 if [ ! -f "README.md" ] || [ ! -d "backend" ] || [ ! -d "frontend" ]; then
     echo "❌ Please run this script from the project root directory"
@@ -52,7 +52,7 @@ if [ ! -f ".env.local" ]; then
     echo "   Creating .env.local file..."
     cat > .env.local << EOF
 NEXT_PUBLIC_API_URL=http://localhost:8000
-NEXT_PUBLIC_APP_NAME=EchoStor Security Posture Assessment
+NEXT_PUBLIC_APP_NAME=Security Posture Assessment
 EOF
     echo "   ✅ Created .env.local file"
 fi
@@ -94,7 +94,7 @@ echo "      Backend API: http://localhost:8000"
 echo "      API Docs: http://localhost:8000/docs"
 echo ""
 echo "   4. Admin login:"
-echo "      Email: aadish.bahati@echostor.com"
+echo "      Email: admin@administrator.com"
 echo "      Password: $ADMIN_PASSWORD"
 echo ""
 echo "🎉 Happy coding!"

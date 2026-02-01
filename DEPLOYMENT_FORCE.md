@@ -9,4 +9,4 @@ Timestamp: 1758015813
 The frontend deployment was showing 404 even after PR #13 successfully removed the incompatible rewrites configuration. This file change should force Vercel to pick up the latest configuration and deploy properly.
 
 ## Expected Result
-The frontend at https://echostor-security-posture-tool.vercel.app should load the EchoStor Security Posture Assessment landing page instead of showing a 404 error.
+The frontend at https://echostor-security-posture-tool.vercel.app should load the Security Posture Security Posture Assessment landing page instead of showing a 404 error.

@@ -1,6 +1,6 @@
 # E2E Tests
 
-End-to-end tests for the EchoStor Security Posture Assessment Tool using Playwright.
+End-to-end tests for the Security Posture Security Posture Assessment Tool using Playwright.
 
 ## Running Tests
 
