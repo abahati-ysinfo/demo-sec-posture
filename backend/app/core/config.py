@@ -18,7 +18,7 @@ class Settings(BaseSettings):
     OPENAI_MODEL: str = "gpt-5-nano"  # Change via env var - token params auto-detected
     OPENAI_MAX_TOKENS: int = 10000
     OPENAI_TEMPERATURE: float = 0.5
-    OPENAI_TIMEOUT: int = 120  # Increased from 60s for slower models like gpt-5-nano
+    OPENAI_TIMEOUT: int = 300  # 5 minutes for slower models like gpt-5-nano
     OPENAI_KEYS_ENCRYPTION_KEY: str | None = None
 
     AI_PROMPT_VERSION: str = (
