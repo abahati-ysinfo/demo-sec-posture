@@ -1,49 +1,33 @@
 app = "security-posture-demo"
 primary_region = "iad"
 
-# Multi-region deployment configuration
-# US East Coast (primary), US West Coast, and Australia (Sydney)
+# Single-region deployment to minimize costs
 [deploy]
   strategy = "rolling"
   release_command = "poetry run alembic upgrade head"
   release_command_timeout = "120s"
 
-[[regions]]
-  name = "iad"  # US East Coast (primary)
-  
-[[regions]]
-  name = "lax"  # US West Coast
-  
-[[regions]]
-  name = "syd"  # Australia (Sydney)
-
 [build]
   dockerfile = "Dockerfile"
 
-[[services]]
-  http_checks = []
+# V2 Machines HTTP service configuration
+[http_service]
   internal_port = 8000
-  processes = ["app"]
-  protocol = "tcp"
-  script_checks = []
+  force_https = true
+  # Machines stop when idle (no active connections)
+  auto_stop_machines = "stop"
+  # Do NOT auto-start machines on incoming requests -
+  # if you shut the machine down, it stays down
+  auto_start_machines = false
+  min_machines_running = 0
 
-  [services.concurrency]
+  [http_service.concurrency]
+    type = "connections"
     hard_limit = 25
     soft_limit = 20
-    type = "connections"
-
-  [[services.ports]]
-    force_https = true
-    handlers = ["http"]
-    port = 80
-
-  [[services.ports]]
-    handlers = ["tls", "http"]
-    port = 443
 
 [env]
   PORT = "8000"
-  RESTART_TIMESTAMP = "1726477055"
   REPORTS_DIR = "/data/reports"
   FLY_PRIMARY_REGION = "iad"
 
@@ -51,14 +35,8 @@ primary_region = "iad"
   source = "reports_data"
   destination = "/data"
 
-# Machine configuration for multi-region deployment
-# Total of 4 machines distributed across 3 regions
+# Minimal VM configuration to reduce Fly.io costs
 [[vm]]
-  memory = "2gb"
+  memory = "256mb"
   cpu_kind = "shared"
   cpus = 1
-  
-# Scale configuration for multi-region deployment
-[scaling]
-  min_machines_running = 1
-  max_machines_running = 4
